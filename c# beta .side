@@ -1,0 +1,164 @@
+{
+  "id": "32eadf85-83c2-4fa8-8199-01ea525f4643",
+  "version": "2.0",
+  "name": "c# beta ",
+  "url": "https://gs1eg-is-mygs1-fe-beta.azurewebsites.net",
+  "tests": [{
+    "id": "bdb3bb94-ae2a-4fb4-9402-dab49ab96be2",
+    "name": "sign in ",
+    "commands": [{
+      "id": "6ae2d210-1bd4-4878-a0e1-83c7b5ce920f",
+      "comment": "",
+      "command": "open",
+      "target": "/auth/signup",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80785d67-0c50-432b-b146-dddbefea81e7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1130x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04258bf3-e568-401f-8db8-a8a113e54b7e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-button-wrapper",
+      "targets": [
+        ["css=.mat-button-wrapper", "css:finder"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'تسجيل الدخول')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bea2a1b-f306-4a4b-9034-aaabb91f6e21",
+      "comment": "",
+      "command": "click",
+      "target": "id=signInName",
+      "targets": [
+        ["id=signInName", "id"],
+        ["name=البريد الإلكتروني", "name"],
+        ["css=#signInName", "css:finder"],
+        ["xpath=//input[@id='signInName']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd4b4046-b790-4b5c-af8c-7e7f4975f452",
+      "comment": "",
+      "command": "type",
+      "target": "id=signInName",
+      "targets": [],
+      "value": "mohamed.abdelrahman@gs1eg.org"
+    }, {
+      "id": "09e128d7-6a32-401b-b0c4-59538cd08373",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=كلمة المرور", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b11cbbd-a8ec-4253-9bc6-e1be5d2ad554",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=كلمة المرور", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3718ae74-d758-4fed-b698-c0f6a3d1d470",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=كلمة المرور", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d6dd11a-335c-42b1-89e3-6e334418f14c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=كلمة المرور", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "41a567a3-6b98-48a3-a5b2-a8e801ece089",
+      "comment": "",
+      "command": "click",
+      "target": "id=next",
+      "targets": [
+        ["id=next", "id"],
+        ["css=#next", "css:finder"],
+        ["xpath=//button[@id='next']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[4]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'تسجيل الدخول')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4da8bcb0-24c1-4bae-8c46-0c79ad6edde4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(2)",
+      "targets": [
+        ["css=.nav-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//nav/div/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'لوحة التحكم')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6138641-deff-47e0-9972-413203bc1fde",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=لوحة التحكم",
+      "targets": [
+        ["linkText=لوحة التحكم", "linkText"],
+        ["css=.active", "css:finder"],
+        ["xpath=//a[contains(text(),'لوحة التحكم')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dashboard')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'لوحة التحكم')]", "xpath:innerText"]
+      ],
+      "value": "لوحة التحكم"
+    }]
+  }],
+  "suites": [{
+    "id": "06ca0be7-8fbe-4d09-baa1-dd30d03fa98f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bdb3bb94-ae2a-4fb4-9402-dab49ab96be2"]
+  }],
+  "urls": ["https://gs1eg-is-mygs1-fe-beta.azurewebsites.net/"],
+  "plugins": []
+}
