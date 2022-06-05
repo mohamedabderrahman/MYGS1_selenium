@@ -1,0 +1,162 @@
+{
+  "id": "006dc040-a497-451a-be26-09beaeaa998a",
+  "version": "2.0",
+  "name": "var handle",
+  "url": "https://gs1is.gs1eg.org/",
+  "tests": [{
+    "id": "34d17e19-581d-40e1-8fd5-7c1c3f794fe9",
+    "name": "vars",
+    "commands": [{
+      "id": "14f303d4-9606-4a6e-8e86-37778965fe4c",
+      "comment": "",
+      "command": "open",
+      "target": "https://gs1is.gs1eg.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2bb803bc-45de-4c12-a00c-f90a015dad2f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=إدارة بنوك الأرقام",
+      "targets": [
+        ["linkText=إدارة بنوك الأرقام", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة بنوك الأرقام')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gcp')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة بنوك الأرقام')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1afc32e0-318a-4315-a5b9-131d7bc8fd05",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(5) > .nav-link",
+      "targets": [
+        ["linkText=إدارة بنوك الأرقام", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة بنوك الأرقام')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gcp')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة بنوك الأرقام')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33825659-43b8-490a-b2a1-580f9518be54",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'إدارة بنوك الأرقام')]",
+      "targets": [
+        ["linkText=إدارة بنوك الأرقام", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة بنوك الأرقام')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gcp')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة بنوك الأرقام')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ccf6fc1-d4f4-4772-97ca-a761bbb4ecb2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, '/gcp')]",
+      "targets": [
+        ["linkText=إدارة بنوك الأرقام", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة بنوك الأرقام')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gcp')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة بنوك الأرقام')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a58be2e-4975-425f-9775-ec07dfad046c",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.mat-row:nth-child(59) > .cdk-column-code",
+      "targets": [],
+      "value": "var"
+    }, {
+      "id": "04c7dc36-87cb-48f7-b74f-90f5044584c9",
+      "comment": "",
+      "command": "//storeText",
+      "target": "css=.mat-row:last-child   > .cdk-column-code",
+      "targets": [],
+      "value": "var"
+    }, {
+      "id": "79f751f6-431c-4d08-9e81-ee586973b2e1",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.ng-tns-c47-5 > img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "927a7e6a-a494-4992-95a4-352b3c50eb4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.profile-mat-menu .btn-wrapper",
+      "targets": [
+        ["css=.profile-mat-menu .btn-wrapper", "css:finder"],
+        ["xpath=//app-account/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3261051c-3f59-4684-85b3-410198818f4b",
+      "comment": "",
+      "command": "type",
+      "target": "id=mat-input-0",
+      "targets": [
+        ["id=mat-input-0", "id"],
+        ["css=#mat-input-0", "css:finder"],
+        ["xpath=//input[@id='mat-input-0']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b27ea5a9-04ac-4018-aabb-6dd160e4843a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=mat-input-0",
+      "targets": [],
+      "value": "${var}"
+    }, {
+      "id": "01993256-2586-4708-9312-ada5ebac0e63",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.ng-tns-c47-5 > img",
+      "targets": [
+        ["css=.ng-tns-c47-5 > img", "css:finder"],
+        ["xpath=//div[3]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80a46d6f-0180-4e07-82de-2c7fa57bfa65",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.mat-row:nth-child(59) > .cdk-column-code",
+      "targets": [
+        ["css=.mat-row:nth-child(59) > .cdk-column-code", "css:finder"],
+        ["xpath=//tr[59]/td[2]", "xpath:position"]
+      ],
+      "value": "30000"
+    }]
+  }, {
+    "id": "d0330086-0186-4763-b603-a0a170b418f1",
+    "name": "new product",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "e0cd8928-38b4-4598-aa17-c17b00f06005",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["34d17e19-581d-40e1-8fd5-7c1c3f794fe9"]
+  }],
+  "urls": ["https://gs1is.gs1eg.org/"],
+  "plugins": []
+}

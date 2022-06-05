@@ -1,0 +1,151 @@
+{
+  "id": "df8b69ba-ca81-468f-ad5c-54d65b375561",
+  "version": "2.0",
+  "name": "sign in",
+  "url": "https://gs1is.gs1eg.org",
+  "tests": [{
+    "id": "4eb02100-0fb6-404d-b16c-ca0e755051a4",
+    "name": "sign in",
+    "commands": [{
+      "id": "694fb234-98a9-45b9-b1c5-d5787f2d88f4",
+      "comment": "",
+      "command": "open",
+      "target": "https://gs1is.gs1eg.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1385636a-4c91-4a7e-93e0-5eea0f2b87ab",
+      "comment": "",
+      "command": "store",
+      "target": "mohamed.abdelrahman@gs1eg.org",
+      "targets": [],
+      "value": "username"
+    }, {
+      "id": "88479bd0-d792-4bab-80ab-4a63502afdfb",
+      "comment": "",
+      "command": "store",
+      "target": "12345678",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "75a12fe2-ebdb-4485-8e1d-ebf13982fd11",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mat-button-wrapper",
+      "targets": [
+        ["css=.mat-button-wrapper", "css:finder"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'تسجيل الدخول')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cbe896c-5dbd-46bb-a129-029f39e6bb68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-button-wrapper",
+      "targets": [
+        ["css=.mat-button-wrapper", "css:finder"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'تسجيل الدخول')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4192",
+      "windowTimeout": 2000
+    }, {
+      "id": "17482953-e2cd-453b-a7ff-e573085eb33f",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "072669c2-9b0e-408a-80be-606bae026304",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4192}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64638e27-b01c-454d-a5fa-4c164ad53165",
+      "comment": "",
+      "command": "click",
+      "target": "id=signInName",
+      "targets": [
+        ["id=signInName", "id"],
+        ["name=البريد الإلكتروني", "name"],
+        ["css=#signInName", "css:finder"],
+        ["xpath=//input[@id='signInName']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44a603a8-98ff-4dcb-aceb-186ad8f7faf6",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=signInName",
+      "targets": [],
+      "value": "${username}"
+    }, {
+      "id": "0608bc9a-66bd-4993-8882-66b33aea1a15",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=كلمة المرور", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "137e4bf7-c811-4eb9-9367-ffbe0c25d1b3",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=كلمة المرور", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "${password}"
+    }, {
+      "id": "9053b99c-f9d1-4319-a6e7-8ab5c3a71946",
+      "comment": "",
+      "command": "click",
+      "target": "id=next",
+      "targets": [
+        ["id=next", "id"],
+        ["css=#next", "css:finder"],
+        ["xpath=//button[@id='next']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[4]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'تسجيل الدخول')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15d19174-b7d6-4c72-83d8-dbb019701182",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "84f2a398-2d3f-476c-895c-78cacf2eaf52",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4eb02100-0fb6-404d-b16c-ca0e755051a4"]
+  }],
+  "urls": ["https://gs1is.gs1eg.org/"],
+  "plugins": []
+}

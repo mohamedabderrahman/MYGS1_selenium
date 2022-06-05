@@ -1,0 +1,393 @@
+{
+  "id": "392e280b-5b84-4200-8914-a10256151f75",
+  "version": "2.0",
+  "name": "add product",
+  "url": "https://gs1is.gs1eg.org",
+  "tests": [{
+    "id": "18f821e1-d322-4551-a4e4-797ba64d6c51",
+    "name": "add new product",
+    "commands": [{
+      "id": "af35ee23-41dd-41ae-993c-c5128f34fc27",
+      "comment": "",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28586bb2-7e5e-4995-866a-e93d8bec8c26",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5970c443-4ba8-41bc-9105-fdf7b3e19bb8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.addProdBtn > .mat-button-wrapper",
+      "targets": [
+        ["css=.addProdBtn > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,' إضافة منتج جديد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb95549e-8714-44eb-83c1-af014414a4da",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.cdk-focused",
+      "targets": [
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//div[@id='mat-menu-panel-4']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'اضافة منتج فردى')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab7aa7f3-cf00-4271-a22a-2db01145b795",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-focused",
+      "targets": [
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//div[@id='mat-menu-panel-4']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'اضافة منتج فردى')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd784edb-53d5-4715-bdb8-977c21f0ec8e",
+      "comment": "",
+      "command": "click",
+      "target": "id=mat-input-2",
+      "targets": [
+        ["id=mat-input-2", "id"],
+        ["name=nameAr", "name"],
+        ["css=#mat-input-2", "css:finder"],
+        ["xpath=//input[@id='mat-input-2']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "244721ce-75da-4db8-81e6-e4a45848cba4",
+      "comment": "",
+      "command": "type",
+      "target": "id=mat-input-2",
+      "targets": [
+        ["id=mat-input-2", "id"],
+        ["name=nameAr", "name"],
+        ["css=#mat-input-2", "css:finder"],
+        ["xpath=//input[@id='mat-input-2']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "شششش"
+    }, {
+      "id": "bfc99f9d-1f8a-4e75-9ec9-1b28d27d231f",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='file']",
+      "targets": [
+        ["css=.upload-area > .ng-star-inserted:nth-child(1)", "css:finder"],
+        ["xpath=//input[@type='file']", "xpath:attributes"],
+        ["xpath=//app-dropzone/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\mohamed.abdelrahman\\Pictures\\Screenshots\\old add new product from ui.png"
+    }, {
+      "id": "64c644b1-cdfb-49a5-b274-c25948117392",
+      "comment": "",
+      "command": "click",
+      "target": "id=mat-input-3",
+      "targets": [
+        ["id=mat-input-3", "id"],
+        ["name=nameEn", "name"],
+        ["css=#mat-input-3", "css:finder"],
+        ["xpath=//input[@id='mat-input-3']", "xpath:attributes"],
+        ["xpath=//div[3]/mat-form-field/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e5a6454-6902-4cf6-ac85-b23a52b1aea5",
+      "comment": "",
+      "command": "type",
+      "target": "id=mat-input-3",
+      "targets": [
+        ["id=mat-input-3", "id"],
+        ["name=nameEn", "name"],
+        ["css=#mat-input-3", "css:finder"],
+        ["xpath=//input[@id='mat-input-3']", "xpath:attributes"],
+        ["xpath=//div[3]/mat-form-field/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": "aaaaaa"
+    }, {
+      "id": "94a0f57a-c226-4b55-99e0-4742ee3973cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=mat-input-4",
+      "targets": [
+        ["id=mat-input-4", "id"],
+        ["name=gpc", "name"],
+        ["css=#mat-input-4", "css:finder"],
+        ["xpath=//input[@id='mat-input-4']", "xpath:attributes"],
+        ["xpath=//div[4]/mat-form-field/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9c88ebd-031c-4eca-b016-d45733f3bca1",
+      "comment": "",
+      "command": "click",
+      "target": "id=mat-option-7",
+      "targets": [
+        ["id=mat-option-7", "id"],
+        ["css=#mat-option-7", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-7']", "xpath:attributes"],
+        ["xpath=//div[@id='mat-autocomplete-2']/mat-option[5]", "xpath:idRelative"],
+        ["xpath=//mat-option[5]", "xpath:position"],
+        ["xpath=//mat-option[contains(.,'شوح غواتيمالي (التنوب الغواتيمالي)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d65a377-3925-4eef-a387-8ae0f99a05bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=mat-input-5",
+      "targets": [
+        ["id=mat-input-5", "id"],
+        ["name=brand", "name"],
+        ["css=#mat-input-5", "css:finder"],
+        ["xpath=//input[@id='mat-input-5']", "xpath:attributes"],
+        ["xpath=//div[6]/mat-form-field/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2c08bc2-9485-4f52-b61c-ce04d93705c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-9 p",
+      "targets": [
+        ["css=#mat-option-9 p", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-9']/span/p", "xpath:idRelative"],
+        ["xpath=//mat-option[3]/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'لمار')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "710ee960-d2e2-419e-8b60-606923149231",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-6:nth-child(7)",
+      "targets": [
+        ["css=.col-md-6:nth-child(7)", "css:finder"],
+        ["xpath=//div[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0d240af-c387-4f9d-905a-f9f3db463e5e",
+      "comment": "",
+      "command": "click",
+      "target": "id=mat-input-6",
+      "targets": [
+        ["id=mat-input-6", "id"],
+        ["name=gcp", "name"],
+        ["css=#mat-input-6", "css:finder"],
+        ["xpath=//input[@id='mat-input-6']", "xpath:attributes"],
+        ["xpath=//div[7]/mat-form-field/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a59de4b-1398-40cb-bf5b-bc5180ba556b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-275 p",
+      "targets": [
+        ["css=#mat-option-275 p", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-275']/span/p", "xpath:idRelative"],
+        ["xpath=//span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'4007216')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36ec1edf-ac01-47f8-9d74-1b7645bd532c",
+      "comment": "",
+      "command": "click",
+      "target": "id=mat-input-7",
+      "targets": [
+        ["id=mat-input-7", "id"],
+        ["name=skuNumber", "name"],
+        ["css=#mat-input-7", "css:finder"],
+        ["xpath=//input[@id='mat-input-7']", "xpath:attributes"],
+        ["xpath=//div[8]/mat-form-field/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb6c8229-1134-445d-ab4d-e379defbc569",
+      "comment": "",
+      "command": "type",
+      "target": "id=mat-input-7",
+      "targets": [
+        ["id=mat-input-7", "id"],
+        ["name=skuNumber", "name"],
+        ["css=#mat-input-7", "css:finder"],
+        ["xpath=//input[@id='mat-input-7']", "xpath:attributes"],
+        ["xpath=//div[8]/mat-form-field/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": "123455432131234"
+    }, {
+      "id": "3dc19a31-8ea1-4087-a3df-8505b5d88d70",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-select-placeholder",
+      "targets": [
+        ["css=.mat-select-placeholder", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-3']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/mat-select/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'البلد التي سوف يباع فيها المنتج (اجباري)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd9dd65f-db7f-4327-98e4-6e2c511b8158",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-27 > .mat-pseudo-checkbox",
+      "targets": [
+        ["css=#mat-option-27 > .mat-pseudo-checkbox", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-27']/mat-pseudo-checkbox", "xpath:idRelative"],
+        ["xpath=//mat-option[5]/mat-pseudo-checkbox", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4778a798-bd83-45eb-b304-e4f47071242f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-overlay-backdrop",
+      "targets": [
+        ["css=.cdk-overlay-backdrop", "css:finder"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22fc5d20-9441-4b19-9ad9-00e184cfacc8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[11]/div/mat-form-field/div/div/div[3]/input",
+      "targets": [
+        ["id=mat-input-9", "id"],
+        ["name=netContent", "name"],
+        ["css=#mat-input-9", "css:finder"],
+        ["xpath=//input[@id='mat-input-9']", "xpath:attributes"],
+        ["xpath=//div[11]/div/mat-form-field/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "7d4e08a1-f5a8-4048-844d-698683fb2df3",
+      "comment": "",
+      "command": "click",
+      "target": "id=mat-input-8",
+      "targets": [
+        ["id=mat-input-8", "id"],
+        ["name=unitOfMeasure", "name"],
+        ["css=#mat-input-8", "css:finder"],
+        ["xpath=//input[@id='mat-input-8']", "xpath:attributes"],
+        ["xpath=//div[10]/mat-form-field/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d9affec-0397-408c-a3d1-a02833d9cede",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-274 p",
+      "targets": [
+        ["css=#mat-option-274 p", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-274']/span/p", "xpath:idRelative"],
+        ["xpath=//mat-option[5]/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'استير')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "822bc2ec-ecc3-4606-bff4-4baa3a69ac93",
+      "comment": "",
+      "command": "click",
+      "target": "id=mat-input-9",
+      "targets": [
+        ["id=mat-input-9", "id"],
+        ["name=netContent", "name"],
+        ["css=#mat-input-9", "css:finder"],
+        ["xpath=//input[@id='mat-input-9']", "xpath:attributes"],
+        ["xpath=//div[11]/div/mat-form-field/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6adb82ce-f41b-4cde-bd3b-f4674426530c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c47-19 > .mat-form-field-infix",
+      "targets": [
+        ["css=.ng-tns-c47-19 > .mat-form-field-infix", "css:finder"],
+        ["xpath=//div[11]/div/mat-form-field/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b46e97ae-ef24-4892-bd44-8fcc9a6ba6f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=mat-input-9",
+      "targets": [
+        ["id=mat-input-9", "id"],
+        ["name=netContent", "name"],
+        ["css=#mat-input-9", "css:finder"],
+        ["xpath=//input[@id='mat-input-9']", "xpath:attributes"],
+        ["xpath=//div[11]/div/mat-form-field/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "735c3c3e-c34e-48a4-8751-b890304c02a7",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=mat-input-9",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "da3de2a7-010c-4c36-ae24-bebbf2d9b5d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.second-action-button",
+      "targets": [
+        ["css=.second-action-button", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'إضافة المنتج')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99fd9034-472e-4ac8-ac0c-32c6b6dff715",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-button-wrapper > .ng-star-inserted",
+      "targets": [
+        ["css=.mat-button-wrapper > .ng-star-inserted", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-0']/div[3]/button/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a4958f9-9653-402a-a774-a875ab56379c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mat-dialog-actions > .mat-focus-indicator",
+      "targets": [
+        ["css=.mat-dialog-actions > .mat-focus-indicator", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-2']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "332d3c4e-764e-4a3f-a448-b11b1099ce53",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["18f821e1-d322-4551-a4e4-797ba64d6c51"]
+  }],
+  "urls": ["https://gs1is.gs1eg.org/"],
+  "plugins": []
+}

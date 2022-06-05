@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>signin</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Untitled Test Case</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://gs1is.gs1eg.org/<datalist><option>https://gs1is.gs1eg.org/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ar'])[1]/following::span[3]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ar'])[1]/following::span[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='نوفر لغة مشتركة بين الأعمال'])[1]/following::span[5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='الاسم الأول'])[1]/preceding::span[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='اسم العائلة'])[1]/preceding::span[4]</option><option>xpath=//*/text()[normalize-space(.)='تسجيل الدخول']/parent::*</option><option>xpath=//button/span</option><option>css=span.mat-button-wrapper</option></datalist></td><td></td></tr>
+<tr><td>selectWindow</td><td>win_ser_1<datalist><option>win_ser_1</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=signInName<datalist><option>id=signInName</option><option>name=البريد الإلكتروني</option><option>xpath=//input[@id='signInName']</option><option>xpath=//form[@id='localAccountForm']/div[3]/div/input</option><option>xpath=//input</option><option>css=#signInName</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=signInName<datalist><option>id=signInName</option><option>name=البريد الإلكتروني</option><option>xpath=//input[@id='signInName']</option><option>xpath=//form[@id='localAccountForm']/div[3]/div/input</option><option>xpath=//input</option><option>css=#signInName</option></datalist></td><td>mohamed.abdelrahman@gs1eg.org</td></tr>
+<tr><td>click</td><td>id=password<datalist><option>id=password</option><option>name=كلمة المرور</option><option>xpath=//input[@id='password']</option><option>xpath=//form[@id='localAccountForm']/div[3]/div[2]/div[3]/input</option><option>xpath=//div[3]/input</option><option>css=#password</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=كلمة المرور</option><option>xpath=//input[@id='password']</option><option>xpath=//form[@id='localAccountForm']/div[3]/div[2]/div[3]/input</option><option>xpath=//div[3]/input</option><option>css=#password</option></datalist></td><td>12345678</td></tr>
+<tr><td>click</td><td>id=next<datalist><option>id=next</option><option>xpath=//button[@id='next']</option><option>xpath=//form[@id='localAccountForm']/div[3]/div[4]/button</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='نسيت كلمة المرور؟'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='كلمة المرور'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='إنشاء حساب'])[1]/preceding::button[1]</option><option>xpath=//button</option><option>css=#next</option></datalist></td><td></td></tr>
+<tr><td>selectWindow</td><td>win_ser_local<datalist><option>win_ser_local</option></datalist></td><td></td></tr>
+</tbody></table>
+</body>
+</html>

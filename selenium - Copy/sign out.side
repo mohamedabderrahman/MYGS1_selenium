@@ -1,0 +1,57 @@
+{
+  "id": "6001380a-2f30-44fb-ae4a-1fd8f85df4bf",
+  "version": "2.0",
+  "name": "sign out",
+  "url": "https://gs1is.gs1eg.org",
+  "tests": [{
+    "id": "7242bd1e-b9d3-482c-9c59-3855e8734e6c",
+    "name": "sign out",
+    "commands": [{
+      "id": "5a5ca4d1-0c15-4001-aa18-5835d5a095b6",
+      "comment": "",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfad08ac-3b22-4b65-8979-548bbe2bb4ca",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "021114fc-a156-4dd1-b960-31b9b3212a42",
+      "comment": "",
+      "command": "click",
+      "target": "css=.profile-mat-menu .mat-menu-trigger > img",
+      "targets": [
+        ["css=.profile-mat-menu .mat-menu-trigger > img", "css:finder"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b5a631a-68b8-4620-94d3-62f3553a75cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.second-button",
+      "targets": [
+        ["css=.second-button", "css:finder"],
+        ["xpath=//div[@id='mat-menu-panel-2']/div/div/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'تسجيل الخروج')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "629f76b8-6f85-44cd-993b-1f9a80b2cb20",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7242bd1e-b9d3-482c-9c59-3855e8734e6c"]
+  }],
+  "urls": ["https://gs1is.gs1eg.org/"],
+  "plugins": []
+}

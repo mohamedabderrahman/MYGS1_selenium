@@ -1,0 +1,307 @@
+{
+  "id": "0cd0bbe9-a0b2-40de-b762-ccf72b2c2488",
+  "version": "2.0",
+  "name": "purchase a package acceptance",
+  "url": "https://gs1is.gs1eg.org/dashboard",
+  "tests": [{
+    "id": "cd2b8752-535f-4348-9f2e-3790d88c852a",
+    "name": "purchase ",
+    "commands": [{
+      "id": "174bf57e-62ae-4169-998c-68ad0bee0b9f",
+      "comment": "",
+      "command": "open",
+      "target": "https://gs1is.gs1eg.org/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bf63fd4-a482-48f9-a21c-e863bb6cd640",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=إدارة الفواتير",
+      "targets": [
+        ["linkText=إدارة الفواتير", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة الفواتير')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/invoices')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة الفواتير')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25686109-0705-4bde-9c63-b238c89f1599",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(6) > .nav-link",
+      "targets": [
+        ["linkText=إدارة الفواتير", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة الفواتير')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/invoices')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة الفواتير')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9c33427-f453-418f-b996-3ea33b84b6fa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'إدارة الفواتير')]",
+      "targets": [
+        ["linkText=إدارة الفواتير", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة الفواتير')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/invoices')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة الفواتير')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9c179f0-3d5b-4a13-9da2-2a3b7f901dfc",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='navbarSupportedContent']/ul/li[6]/a",
+      "targets": [
+        ["linkText=إدارة الفواتير", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة الفواتير')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/invoices')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة الفواتير')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f74a550a-f82b-4f45-8fe9-7859320f00db",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "xpath=//a[contains(@href, '/invoices')]",
+      "targets": [
+        ["linkText=إدارة الفواتير", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة الفواتير')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/invoices')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة الفواتير')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84178cad-f260-456b-8379-6027e30ec987",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//td[12]/button/span/img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15515ca0-2f26-4d97-b016-35ddd0e55dff",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.cdk-focused",
+      "targets": [
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//div[@id='mat-menu-panel-27']/div/button[5]", "xpath:idRelative"],
+        ["xpath=//button[5]", "xpath:position"],
+        ["xpath=//button[contains(.,'رفع صورة العقد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5689010c-5675-4998-ab57-189396870af9",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//button[contains(.,'رفع صورة العقد')]",
+      "targets": [
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//div[@id='mat-menu-panel-27']/div/button[5]", "xpath:idRelative"],
+        ["xpath=//button[5]", "xpath:position"],
+        ["xpath=//button[contains(.,'رفع صورة العقد')]", "xpath:innerText"]
+      ],
+      "value": "رفع صورة العقد"
+    }, {
+      "id": "c94f42b7-5fc4-492f-a2f8-91ede6038a25",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//button[contains(.,'رفع صورة العقد')]",
+      "targets": [
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//div[@id='mat-menu-panel-27']/div/button[5]", "xpath:idRelative"],
+        ["xpath=//button[5]", "xpath:position"],
+        ["xpath=//button[contains(.,'رفع صورة العقد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb238850-2dae-4ec5-a296-352b14e30d44",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'رفع صورة العقد')]",
+      "targets": [
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//div[@id='mat-menu-panel-27']/div/button[5]", "xpath:idRelative"],
+        ["xpath=//button[5]", "xpath:position"],
+        ["xpath=//button[contains(.,'رفع صورة العقد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ceee65a-5324-44b0-bd36-61102b07d561",
+      "comment": "",
+      "command": "type",
+      "target": "css=.upload-area > .ng-star-inserted:nth-child(1)",
+      "targets": [
+        ["css=.upload-area > .ng-star-inserted:nth-child(1)", "css:finder"],
+        ["xpath=//input[@type='file']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-2']/app-upload-contract/div[2]/app-dropzone/div/div/input", "xpath:idRelative"],
+        ["xpath=//app-dropzone/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\mohamed.abdelrahman\\Pictures\\Screenshots\\Screenshot (7).png"
+    }, {
+      "id": "7f3105a3-3526-4ef8-85a8-59dfe3ffff55",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ms-2 > .mat-button-wrapper",
+      "targets": [
+        ["css=.ms-2 > .mat-button-wrapper", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-0']/app-upload-contract/div[3]/button[2]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'رفع صورة العقد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4718b20e-e19e-4f39-b918-324a8e1daf19",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'رفع صورة العقد')]",
+      "targets": [
+        ["css=.ms-2 > .mat-button-wrapper", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-0']/app-upload-contract/div[3]/button[2]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'رفع صورة العقد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "efd9b033-55b0-475d-8ba1-6552293bf1d2",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,'تم')]",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "bd0b95d0-f888-4c76-b2d8-1c02797da5f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-flat-button > .mat-button-wrapper",
+      "targets": [
+        ["css=.mat-flat-button > .mat-button-wrapper", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-3']/app-success-operation/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'تم')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3727ee72-8cdb-404e-b4fc-04eb03a2b933",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//td[12]/button/span/img",
+      "targets": [
+        ["css=.cdk-focused img", "css:finder"],
+        ["xpath=//td[12]/button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6aa1a26-a7cb-4c66-ae83-662733ce735f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.cdk-focused",
+      "targets": [
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//div[@id='mat-menu-panel-166']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'قبول الدفع')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dedceb6-1eee-414b-b116-121f77f41f60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-focused",
+      "targets": [
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//div[@id='mat-menu-panel-166']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'قبول الدفع')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4376575-e4e1-4979-86a3-fc2412c9ebb5",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "xpath=//button[contains(.,'قبول الدفع')]",
+      "targets": [
+        ["css=.mat-menu-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='mat-menu-panel-166']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'قبول الدفع')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8b6cb16-0218-4fd1-8a5e-bb84a3120018",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btnMd",
+      "targets": [
+        ["css=.btnMd", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-2']/app-change-invoice-status/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//app-change-invoice-status/div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'قبول الدفع')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3d1c5b9-8220-4e3c-8670-0bf0a6a0927e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnMd",
+      "targets": [
+        ["css=.btnMd", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-2']/app-change-invoice-status/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//app-change-invoice-status/div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'قبول الدفع')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "859a3c07-bdb9-4924-b59b-fa69203f27be",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mat-flat-button > .mat-button-wrapper",
+      "targets": [
+        ["css=.mat-flat-button > .mat-button-wrapper", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-3']/app-success-operation/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'تم')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a3db8f0-84f0-4410-a8e5-94cf5305adf0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-flat-button > .mat-button-wrapper",
+      "targets": [
+        ["css=.mat-flat-button > .mat-button-wrapper", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-3']/app-success-operation/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'تم')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6d1fbdfd-a27e-4f5a-8a11-aeda85ce9321",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cd2b8752-535f-4348-9f2e-3790d88c852a"]
+  }],
+  "urls": ["https://gs1is.gs1eg.org/dashboard"],
+  "plugins": []
+}

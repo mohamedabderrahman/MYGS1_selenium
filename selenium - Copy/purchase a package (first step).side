@@ -1,0 +1,263 @@
+{
+  "id": "0cd0bbe9-a0b2-40de-b762-ccf72b2c2488",
+  "version": "2.0",
+  "name": "purchase a package",
+  "url": "https://gs1is.gs1eg.org/dashboard",
+  "tests": [{
+    "id": "cd2b8752-535f-4348-9f2e-3790d88c852a",
+    "name": "purchase ",
+    "commands": [{
+      "id": "174bf57e-62ae-4169-998c-68ad0bee0b9f",
+      "comment": "",
+      "command": "open",
+      "target": "https://gs1is.gs1eg.org/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c4a7de7-d45c-4da6-85cb-a3aa7c92a714",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//h3[contains(.,'يمكنك مراجعة تفاصل المنتجات والفواتير ومعلومات شركتك')]",
+      "targets": [
+        ["css=.text-subtitle", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'يمكنك مراجعة تفاصل المنتجات والفواتير ومعلومات شركتك')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "3f8e966b-3314-4424-9f60-9849e3e958f9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=إدارة بنوك الأرقام",
+      "targets": [
+        ["linkText=إدارة بنوك الأرقام", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة بنوك الأرقام')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gcp')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة بنوك الأرقام')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "51ca2ba3-818d-4d19-99f5-e672b670159a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(5) > .nav-link",
+      "targets": [
+        ["linkText=إدارة بنوك الأرقام", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة بنوك الأرقام')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gcp')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة بنوك الأرقام')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5067b28c-94a6-460e-8f5a-6bb7fcf92331",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'إدارة بنوك الأرقام')]",
+      "targets": [
+        ["linkText=إدارة بنوك الأرقام", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة بنوك الأرقام')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gcp')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة بنوك الأرقام')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf0aa9c5-9d4f-41fc-ae70-b5a3514c8239",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a",
+      "targets": [
+        ["linkText=إدارة بنوك الأرقام", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة بنوك الأرقام')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gcp')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة بنوك الأرقام')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8069a044-45d3-447d-a1e0-00b0df64b8b8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, '/gcp')]",
+      "targets": [
+        ["linkText=إدارة بنوك الأرقام", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة بنوك الأرقام')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gcp')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة بنوك الأرقام')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3df7872-b2f5-4418-bb39-d93c62b1a99e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[5]/a",
+      "targets": [
+        ["linkText=إدارة بنوك الأرقام", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة بنوك الأرقام')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gcp')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة بنوك الأرقام')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3166459-4f79-4bea-8d09-358eb658f572",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'إدارة بنوك الأرقام')]",
+      "targets": [
+        ["linkText=إدارة بنوك الأرقام", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة بنوك الأرقام')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gcp')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة بنوك الأرقام')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bba0b8b-a489-4bc2-b11b-02de37aa5eb1",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//h3[contains(.,'يمكنك إدارة والتحكم في بنوك أرقامك')]",
+      "targets": [
+        ["css=.text-subtitle", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'يمكنك مراجعة تفاصل المنتجات والفواتير ومعلومات شركتك')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "b3c4edc7-8b59-4832-8f2b-2e7fdc97e50b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.addProdBtn > .mat-button-wrapper",
+      "targets": [
+        ["css=.addProdBtn > .mat-button-wrapper", "css:finder"],
+        ["xpath=//li[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,' شراء بنك أرقام جديد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e54e6d2-8496-4904-b24a-b0e0c5ca0310",
+      "comment": "",
+      "command": "click",
+      "target": "css=.addProdBtn > .mat-button-wrapper",
+      "targets": [
+        ["css=.addProdBtn > .mat-button-wrapper", "css:finder"],
+        ["xpath=//li[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,' شراء بنك أرقام جديد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5dd82d7-39af-4f43-9cd2-a4656eea1504",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/div/button/span",
+      "targets": [
+        ["css=.cdk-focused > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[3]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'شراء الباقة')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dadf6156-b167-4992-b347-90e359bce0a4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,' الذهاب الي الخطوة التالية ')]",
+      "targets": [
+        ["css=.cdk-focused > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[3]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'شراء الباقة')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "682294ab-e6c7-4ebb-bd04-c488533c60bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-checkbox-5 .mat-checkbox-inner-container",
+      "targets": [
+        ["css=#mat-checkbox-5 .mat-checkbox-inner-container", "css:finder"],
+        ["xpath=//mat-checkbox[@id='mat-checkbox-5']/label/span", "xpath:idRelative"],
+        ["xpath=//mat-expansion-panel[5]/mat-expansion-panel-header/span/div/div/mat-checkbox/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88f174f1-e7b9-4272-9f67-a56fa699cd7f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,305.3333435058594)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b71d6968-8bd2-4d95-8611-ff4fd4894bed",
+      "comment": "",
+      "command": "//click",
+      "target": "xpath=//mat-expansion-panel[5]/mat-expansion-panel-header/span/div/div/mat-checkbox/label/span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30ce467c-f1e0-4355-bf54-9bc509dcb6d8",
+      "comment": "",
+      "command": "//click",
+      "target": "css=#mat-checkbox-5 .mat-checkbox-inner-container",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b8cab9c-437b-463a-966d-21bbcf17904c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mb-4 > .mat-button-wrapper",
+      "targets": [
+        ["css=.mb-4 > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66353a72-196a-45b2-a2d8-e6774106bc05",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-4 > .mat-button-wrapper",
+      "targets": [
+        ["css=.mb-4 > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce5df37e-eb0f-4468-acf4-372f29622f55",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'الذهاب الي لوحة التحكم')]",
+      "targets": [
+        ["css=.cdk-focused > .mat-button-wrapper", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-1']/app-successful-payment/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'الذهاب الي لوحة التحكم')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6d1fbdfd-a27e-4f5a-8a11-aeda85ce9321",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cd2b8752-535f-4348-9f2e-3790d88c852a"]
+  }],
+  "urls": ["https://gs1is.gs1eg.org/dashboard"],
+  "plugins": []
+}
