@@ -25,25 +25,39 @@ public class SuiteTests : IDisposable {
     driver.Quit();
   }
   [Fact]
-  public void Signin() {
-    driver.Navigate().GoToUrl("https://gs1eg-is-mygs1-fe-beta.azurewebsites.net/auth/signup");
-    driver.Manage().Window.Size = new System.Drawing.Size(1130, 816);
+    public void Signin()
     {
-      WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
-      wait.Until(driver => driver.FindElement(By.LinkText("تسجيل الدخول")).Displayed);
-    }
-  //   driver.FindElement(By.Id("signInName")).Click();
-  //   driver.FindElement(By.Id("signInName")).SendKeys("mohamed.abdelrahman@gs1eg.org");
-  //   driver.FindElement(By.Id("password")).Click();
-  //   driver.FindElement(By.Id("password")).Click();
-  //   {
-  //     var element = driver.FindElement(By.Id("password"));
-  //     Actions builder = new Actions(driver);
-  //     builder.DoubleClick(element).Perform();
-  //   }
-  //   driver.FindElement(By.Id("password")).SendKeys("12345678");
-  //   driver.FindElement(By.Id("next")).Click();
-  //   driver.FindElement(By.CssSelector(".nav-item:nth-child(2)")).Click();
-  //   Assert.Equal(driver.FindElement(By.LinkText("لوحة التحكم")).Text, "لوحة التحكم");
-  }
+        driver.Navigate().GoToUrl("https://gs1eg-is-mygs1-fe-beta.azurewebsites.net/auth/signup");
+        driver.Manage().Window.Size = new System.Drawing.Size(1130, 816);
+        driver.FindElement(By.CssSelector(".link")).Click();
+        {
+            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+            wait.Until(driver => driver.FindElement(By.Id("signInName")).Displayed);
+        }
+        driver.FindElement(By.Id("signInName")).Click();
+        driver.FindElement(By.Id("signInName")).SendKeys("mohamed.abdelrahman@gs1eg.org");
+        driver.FindElement(By.Id("password")).Click();
+        driver.FindElement(By.Id("password")).Click();
+        {
+            var element = driver.FindElement(By.Id("password"));
+            Actions builder = new Actions(driver);
+            builder.DoubleClick(element).Perform();
+        }
+        driver.FindElement(By.Id("password")).SendKeys("12345678");
+        driver.FindElement(By.Id("next")).Click();
+
+
+        {
+            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+            wait.Until(driver => driver.FindElement(By.CssSelector(".walk-through-messages-p")).Displayed);
+        }
+		driver.FindElement(By.CssSelector("#escape-btn")).Click();
+
+		{
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			wait.Until(driver => driver.FindElement(By.LinkText("لوحة التحكم")).Displayed);
+		}
+
+		Assert.Equal(driver.FindElement(By.LinkText("لوحة التحكم")).Text, "لوحة التحكم");
+	}
 }

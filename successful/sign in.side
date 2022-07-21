@@ -24,7 +24,7 @@
       "id": "04258bf3-e568-401f-8db8-a8a113e54b7e",
       "comment": "",
       "command": "click",
-      "target": "css=.mat-button-wrapper",
+      "target": "xpath=//span[contains(.,'تسجيل الدخول')]",
       "targets": [
         ["css=.mat-button-wrapper", "css:finder"],
         ["xpath=//button/span", "xpath:position"],

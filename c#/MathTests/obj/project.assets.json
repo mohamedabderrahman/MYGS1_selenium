@@ -5720,24 +5720,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mohamed.abdelrahman\\.nuget\\packages\\": {}
+    "C:\\Users\\mohamed.abdelrahman\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mohamed.abdelrahman\\Desktop\\CCC\\MathTests\\MathTests.csproj",
-      "projectName": "MathTests",
-      "projectPath": "C:\\Users\\mohamed.abdelrahman\\Desktop\\CCC\\MathTests\\MathTests.csproj",
+      "projectUniqueName": "D:\\work\\MyGS1 IS\\selinum\\c#\\MathTests\\MYGS1Tests.csproj",
+      "projectName": "MYGS1Tests",
+      "projectPath": "D:\\work\\MyGS1 IS\\selinum\\c#\\MathTests\\MYGS1Tests.csproj",
       "packagesPath": "C:\\Users\\mohamed.abdelrahman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mohamed.abdelrahman\\Desktop\\CCC\\MathTests\\obj\\",
+      "outputPath": "D:\\work\\MyGS1 IS\\selinum\\c#\\MathTests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\mohamed.abdelrahman\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\mohamed.abdelrahman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

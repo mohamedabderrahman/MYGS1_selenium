@@ -1,0 +1,779 @@
+{
+  "id": "f37753b3-425a-4b67-8ffc-16a7c0a0e79f",
+  "version": "2.0",
+  "name": "import",
+  "url": "https://gs1eg-is-mygs1-fe-beta.azurewebsites.net",
+  "tests": [{
+    "id": "8d9532fe-44a7-467d-9027-e55946846f4b",
+    "name": "import products",
+    "commands": [{
+      "id": "05dbb6ef-6c3b-4e14-b21d-3bffb012310f",
+      "comment": "",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bb7da4c-1a8a-4118-9e58-0834e500cecc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1138x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "161c07dd-6bd1-4118-8c13-11c69cf70783",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.addProdBtn > .mat-button-wrapper",
+      "targets": [
+        ["css=.addProdBtn > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,' إضافة منتج جديد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7a698e5-d309-40ab-989c-575d77573ecd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,' إضافة منتج جديد')]",
+      "targets": [
+        ["css=.addProdBtn > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,' إضافة منتج جديد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "17f8408f-1db3-44c8-8d42-d3bffd19a2f3",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.addProdBtn > .mat-button-wrapper",
+      "targets": [
+        ["css=.addProdBtn > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,' إضافة منتج جديد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8dc5e0d-907f-44c9-88b6-b6759501558a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'اضافة مجموعة منتجات')]",
+      "targets": [
+        ["id=walk-through-step-3", "id"],
+        ["css=#walk-through-step-3", "css:finder"],
+        ["xpath=//button[@id='walk-through-step-3']", "xpath:attributes"],
+        ["xpath=//div[@id='mat-menu-panel-4']/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'اضافة مجموعة منتجات')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "379d9aed-de57-4291-a444-65feb1324e3b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//mat-dialog-container[@id='mat-dialog-0']/app-bulk-type/div[2]/ul/li/p[2]",
+      "targets": [
+        ["css=.active > .text-gray", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-0']/app-bulk-type/div[2]/ul/li/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'منتجات ترفع لأول مرة، تريد إنشاد باركود خاص بها')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a50a8d0-353d-4dbc-ae65-08e5adf58ce9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//button[contains(.,'التالي')]",
+      "targets": [
+        ["css=.btnModal:nth-child(2)", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-0']/app-bulk-type/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'التالي')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae36592f-79ff-48a8-8b0a-1b2b7f2bd693",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'التالي')]",
+      "targets": [
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-0']/app-bulk-type/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'التالي')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7358fd0-4395-4ec0-960d-9e1b2502d2f0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/mat-form-field/div/div/div[3]",
+      "targets": [
+        ["css=.ng-tns-c43-31 > .mat-form-field-infix", "css:finder"],
+        ["xpath=//form/div/div/mat-form-field/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "565439f0-db32-4c5c-99b9-c0f4107aed9c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'50005281')]",
+      "targets": [
+        ["css=#mat-option-2 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-2']/span", "xpath:idRelative"],
+        ["xpath=//mat-option/span", "xpath:position"],
+        ["xpath=//span[contains(.,'50005281')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba7c0dde-9833-4e8d-9a48-ed138a87a1c1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.upload-area > .ng-star-inserted:nth-child(1)",
+      "targets": [
+        ["css=.upload-area > .ng-star-inserted:nth-child(1)", "css:finder"],
+        ["xpath=//input[@type='file']", "xpath:attributes"],
+        ["xpath=//div[@id='walk-through-step-2']/app-dropzone/div/div/input", "xpath:idRelative"],
+        ["xpath=//app-dropzone/div/div/input", "xpath:position"]
+      ],
+      "value": "D:\\work\\MyGS1 IS\\products sheets\\Without_barcode 1 GTIN .xlsx"
+    }, {
+      "id": "bda426f0-aa34-4070-a09a-56c46a40c400",
+      "comment": "",
+      "command": "//type",
+      "target": "xpath=//div[@id='walk-through-step-2']/app-dropzone/div/div",
+      "targets": [],
+      "value": "D:\\work\\MyGS1 IS\\products sheets\\Without_barcode 1 GTIN .xlsx"
+    }, {
+      "id": "754bdcb9-4c42-40ff-b3c0-46354dfc8030",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-button-wrapper > .ng-star-inserted",
+      "targets": [
+        ["css=.mat-button-wrapper > .ng-star-inserted", "css:finder"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56e24183-be75-4f76-b2d1-58ce083f034e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@id='walk-through-step-3']/span/span",
+      "targets": [
+        ["css=.mat-button-wrapper > .ng-star-inserted", "css:finder"],
+        ["xpath=//button[@id='walk-through-step-3']/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e1c0af1-47a4-4362-b19e-37892799f708",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,94.4000015258789)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1dc9522-3b67-457c-94a7-06fb9c2330a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.py-2 > .mat-button-wrapper",
+      "targets": [
+        ["css=.py-2 > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[2]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'إدارة المنتجات')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e8e901fe-68f9-4494-9fc7-b24dbbef9ede",
+    "name": "select product to assert ",
+    "commands": [{
+      "id": "b3427f86-35f4-4e46-b77d-c1e64ffc977c",
+      "comment": "",
+      "command": "open",
+      "target": "/products",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f27af05c-04bd-4d7b-86ae-557c574c8351",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=إدارة المنتجات",
+      "targets": [
+        ["linkText=إدارة المنتجات", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة المنتجات')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/products')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة المنتجات')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e64d6f85-8b3a-4b5d-bde6-05077553478f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-row:nth-child(1) > .cdk-column-gtin",
+      "targets": [
+        ["css=.mat-row:nth-child(1) > .cdk-column-gtin", "css:finder"],
+        ["xpath=//td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'6225000528185')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "792b618b-2a70-47fa-bab4-c0825acec585",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-row:nth-child(1) > .cdk-column-gtin",
+      "targets": [
+        ["css=.mat-row:nth-child(1) > .cdk-column-gtin", "css:finder"],
+        ["xpath=//td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'6225000528185')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac58422f-8020-4bc5-89e5-2ca3c02b22f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-row:nth-child(1) > .cdk-column-gtin",
+      "targets": [
+        ["css=.mat-row:nth-child(1) > .cdk-column-gtin", "css:finder"],
+        ["xpath=//td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'6225000528185')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d59a8426-b53a-4874-a414-8148221cd062",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.mat-row:nth-child(1) > .cdk-column-gtin",
+      "targets": [
+        ["css=.mat-row:nth-child(1) > .cdk-column-gtin", "css:finder"],
+        ["xpath=//td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'6225000528185')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5440f518-d9b4-4fe7-83f4-efb01be10788",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.mat-row:nth-child(1) > .cdk-column-gtin",
+      "targets": [],
+      "value": "gtin"
+    }, {
+      "id": "9a674070-f5be-4dc5-a912-4c306f889492",
+      "comment": "",
+      "command": "echo",
+      "target": "${gtin}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67e449e6-7523-4910-a758-aa57d504a2c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-row:nth-child(1) > .cdk-column-nameEn > .mat-tooltip-trigger",
+      "targets": [
+        ["css=.mat-row:nth-child(1) > .cdk-column-nameEn > .mat-tooltip-trigger", "css:finder"],
+        ["xpath=//td[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e002f5b6-5d9a-484e-9465-7da2447ed7b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5df71059-3a46-4d5a-a29f-e1bc0070a46c",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9abe2344-2487-4964-9a1d-256b3d310a98",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.col-md-6:nth-child(2) > .text-gray",
+      "targets": [
+        ["css=.col-md-6:nth-child(2) > .text-gray", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'تجربهمم - TESTYy')]", "xpath:innerText"]
+      ],
+      "value": "brand"
+    }, {
+      "id": "4689de11-fa4c-4817-8bdf-eb373a79ec56",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.col-md-6:nth-child(5) > .text-gray",
+      "targets": [
+        ["css=.col-md-6:nth-child(5) > .text-gray", "css:finder"],
+        ["xpath=//div[5]/p", "xpath:position"]
+      ],
+      "value": "GCP"
+    }, {
+      "id": "cd35a64b-9def-47ff-ac15-23d8b0dea4b1",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.col-md-6:nth-child(6) > .text-gray",
+      "targets": [
+        ["css=.col-md-6:nth-child(6) > .text-gray", "css:finder"],
+        ["xpath=//div[6]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'عدد 1')]", "xpath:innerText"]
+      ],
+      "value": "content"
+    }, {
+      "id": "c13cacbd-fdd4-4062-91b7-e982ccafb02a",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.col-md-6 > .ng-star-inserted:nth-child(2)",
+      "targets": [
+        ["css=.col-md-6 > .ng-star-inserted:nth-child(2)", "css:finder"],
+        ["xpath=//div[8]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'أروبا')]", "xpath:innerText"]
+      ],
+      "value": "market"
+    }, {
+      "id": "49d636e1-c5ce-46c8-8261-a5bbc9022e33",
+      "comment": "",
+      "command": "store",
+      "target": "TESTYy",
+      "targets": [],
+      "value": "brand_en"
+    }, {
+      "id": "27aa9863-d229-45ca-94bd-790d33326644",
+      "comment": "",
+      "command": "//storeText",
+      "target": "brand_ar",
+      "targets": [],
+      "value": "تجربهمم"
+    }, {
+      "id": "e60a8fd9-fba0-4ab5-8743-1d9401d3db14",
+      "comment": "",
+      "command": "//storeText",
+      "target": "descr_en",
+      "targets": [],
+      "value": "TESTYy adfsdt 1.00 Count"
+    }, {
+      "id": "2597f4d1-86b5-4b85-a7b8-f5adf34c15d7",
+      "comment": "",
+      "command": "//storeText",
+      "target": "descr_ar",
+      "targets": [],
+      "value": "تجربهمم يبلات 1.00 عدد"
+    }, {
+      "id": "c5a65450-2fca-4444-9a0c-f1fe3a066f62",
+      "comment": "",
+      "command": "//storeText",
+      "target": "image_ar",
+      "targets": [],
+      "value": "https://drive.google.com/file/d/16QZpxR0Ms8bOVbY_Y5wVGh8ID5egAW9Q/view?usp=sharing"
+    }, {
+      "id": "7f82051b-c3b7-44a8-b39d-d3c042bdfe19",
+      "comment": "",
+      "command": "//storeText",
+      "target": "net_content",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "69e18304-ed4f-4e17-a963-0b24e21697f9",
+      "comment": "",
+      "command": "//storeText",
+      "target": "market_1",
+      "targets": [],
+      "value": "ABW"
+    }, {
+      "id": "e9eec968-85ae-4ef2-807c-07016d0524a6",
+      "comment": "",
+      "command": "//storeText",
+      "target": "market_2",
+      "targets": [],
+      "value": "AZE"
+    }, {
+      "id": "6c0bd6a2-48bf-449e-8219-2862c2d5666c",
+      "comment": "",
+      "command": "//storeText",
+      "target": "market_3",
+      "targets": [],
+      "value": "ESP"
+    }, {
+      "id": "b63dd6c0-a53a-435b-abc7-d5e5f11c9765",
+      "comment": "",
+      "command": "//storeText",
+      "target": "licensee",
+      "targets": [],
+      "value": "GS1 Egypt"
+    }, {
+      "id": "be9634f0-764b-4aae-9440-bd3570582e9d",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.py-4",
+      "targets": [
+        ["css=.py-4", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'تجربهمم يبلات 1.00 عدد')]", "xpath:innerText"]
+      ],
+      "value": "description"
+    }, {
+      "id": "cfb080ef-8cbf-45ac-9f63-ee3c84456a29",
+      "comment": "",
+      "command": "open",
+      "target": "https://devportal.gs1.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7744fbf-3f57-4104-b22a-30567c5658e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button > span",
+      "targets": [
+        ["css=.button > span", "css:finder"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Explore GRP 3.0 APIs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "beb55664-c2d7-40f0-acfc-5428ca106535",
+      "comment": "",
+      "command": "click",
+      "target": "css=.table-row:nth-child(2) > .col-5 span:nth-child(1)",
+      "targets": [
+        ["css=.table-row:nth-child(2) > .col-5 span:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'GS1 Registry Platform API - ST')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e559de99-69de-4b37-991e-4e7c3ecd039f",
+      "comment": "",
+      "command": "select",
+      "target": "id=apiVersions",
+      "targets": [],
+      "value": "label=v3"
+    }, {
+      "id": "5f0fc486-f244-4cea-b876-bf16f52e0f3a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.nav-item:nth-child(2) .row",
+      "targets": [
+        ["css=.nav-item:nth-child(2) .row", "css:finder"],
+        ["xpath=//li[2]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4d83237-98bc-4291-bda3-1e0ce68f1323",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.nav-item:nth-child(2) .row",
+      "targets": [
+        ["css=.nav-item:nth-child(2) .row", "css:finder"],
+        ["xpath=//li[2]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dd1f394-af9f-4666-ade6-df854c63bb10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(11) .col-md-10",
+      "targets": [
+        ["css=.nav-item:nth-child(11) .col-md-10", "css:finder"],
+        ["xpath=//li[11]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Get Verified GTINs (Public)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40464530-7843-4575-9808-a812f9429b10",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,200)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4a358d8-7cf1-4a3b-9489-e345747476f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.open-console-button",
+      "targets": [
+        ["css=.open-console-button", "css:finder"],
+        ["xpath=//operation-details/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Try it ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5097253-312d-4ec8-899a-9ec7134a303d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group > .form-control-sm",
+      "targets": [
+        ["css=.form-group > .form-control-sm", "css:finder"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e15cac9-d5ea-40d0-9cd0-a90dd3e9b54a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group > .form-control-sm",
+      "targets": [
+        ["css=.form-group > .form-control-sm", "css:finder"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48ef310c-83d8-47b3-9208-445512b5cfc9",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.form-group > .form-control-sm",
+      "targets": [
+        ["css=.form-group > .form-control-sm", "css:finder"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75b383bc-674b-4492-9ea9-36fc6646361d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group > .form-control-sm",
+      "targets": [
+        ["css=.form-group > .form-control-sm", "css:finder"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "${KEY_SHIFT}${KEY_HOME}${KEY_SHIFT}${KEY_DELETE}"
+    }, {
+      "id": "9aa209f5-1b53-40ac-9863-b60b90fc846f",
+      "comment": "",
+      "command": "store",
+      "target": "[\"0",
+      "targets": [],
+      "value": "left"
+    }, {
+      "id": "d793d0aa-b49b-4ed9-847b-42e232bff85c",
+      "comment": "",
+      "command": "store",
+      "target": "\"]",
+      "targets": [],
+      "value": "right"
+    }, {
+      "id": "5a431ce4-e261-46df-82f9-9397db5713ad",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group > .form-control-sm",
+      "targets": [],
+      "value": "${left}${gtin}${right}"
+    }, {
+      "id": "4cdee12f-650a-43ea-9aaa-6e6f706e43b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//operation-console/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Send')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a2806c0-695a-4d8b-901f-7fb9bbe4161a",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.panel:nth-child(3) > pre",
+      "targets": [],
+      "value": "product_json"
+    }, {
+      "id": "7e957c75-727e-4c0a-adc0-f837002a4ba7",
+      "comment": "",
+      "command": "echo",
+      "target": "${product_json}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "857a5da2-5fad-42db-a558-15037599da96",
+      "comment": "",
+      "command": "//echo",
+      "target": "${description}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13a410fb-72cf-4d89-af43-1e1f01a381c9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.panel:nth-child(3) > pre",
+      "targets": [],
+      "value": "${product_json}"
+    }, {
+      "id": "9be5132a-f947-403c-9b19-28774d1ebf6d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.token:nth-child(2) > .header-value",
+      "targets": [
+        ["css=.token:nth-child(2) > .header-value", "css:finder"],
+        ["xpath=//span[2]/span[3]", "xpath:position"]
+      ],
+      "value": "no-cache"
+    }, {
+      "id": "d899490c-c959-44f5-8308-7e575b2e1a3a",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.panel span:nth-child(4)",
+      "targets": [],
+      "value": "abc"
+    }, {
+      "id": "47ef1e89-fb38-4886-81f2-96b6d5233d43",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[starts-with(.,'[{ \"gtin\": \"')and contains(.,'TESTYy')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "998fee40-dc2d-4c0d-abbd-ee80e3f42259",
+      "comment": "",
+      "command": "echo",
+      "target": "${abc}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80d3e3bd-a6bc-44fc-ab59-7aee12444ef9",
+      "comment": "",
+      "command": "store",
+      "target": "HTTP/1.1 200 OK content-type: application/json; charset=utf-8 [{ \"gtin\": \"0",
+      "targets": [],
+      "value": "L_gtin"
+    }, {
+      "id": "14527514-651f-4002-9f3d-d7656dc5b768",
+      "comment": "",
+      "command": "store",
+      "target": "\", \"gpcCategoryCode\": \"10003690\", \"brandName\": [{ \"language\": \"en-US\", \"value\": \"TESTYy\" }, { \"language\": \"ar-EG\", \"value\": \"تجربهمم\" } ], \"productDescription\": [{ \"language\": \"en-US\", \"value\": \"TESTYy adfsdt 1.00 Count\" }, { \"language\": \"ar-EG\", \"value\": \"تجربهمم يبلات 1.00 عدد\" } ], \"productImageUrl\": [{ \"language\": \"ar-EG\", \"value\": \"https://drive.google.com/file/d/16QZpxR0Ms8bOVbY_Y5wVGh8ID5egAW9Q/view?usp=sharing\" }], \"netContent\": [{ \"unitCode\": \"1N\", \"value\": \"1.000\" }], \"countryOfSaleCode\": [{ \"numeric\": \"533\", \"alpha2\": \"AW\", \"alpha3\": \"ABW\" }, { \"numeric\": \"031\", \"alpha2\": \"AZ\", \"alpha3\": \"AZE\" }, { \"numeric\": \"724\", \"alpha2\": \"ES\", \"alpha3\": \"ESP\" } ], \"licenseeName\": \"GS1 Egypt\", \"dateUpdated\": \"2022-06-06T11:09:58.6339129Z\", \"isComplete\": true }]",
+      "targets": [],
+      "value": "R_gtin"
+    }, {
+      "id": "33398fd9-88c3-4eea-9414-532a0cdb0aa5",
+      "comment": "",
+      "command": "//store",
+      "target": "\",\\n    \"gpcCategoryCode\": \"10003690\",\\n    \"brandName\": [{\\n            \"language\": \"en-US\",\\n            \"value\": \"",
+      "targets": [],
+      "value": "brand_en_L"
+    }, {
+      "id": "581994be-c1d2-4d49-98d3-bb01a89543fb",
+      "comment": "",
+      "command": "//store",
+      "target": "\"\\n        },\\n        {\\n            \"language\": \"ar-EG\",\\n            \"value\": \"تجربهمم\"\\n        }\\n    ],\\n    \"productDescription\": [{\\n            \"language\": \"en-US\",\\n            \"value\": \"TESTYy adfsdt 1.00 Count\"\\n        },\\n        {\\n            \"language\": \"ar-EG\",\\n            \"value\": \"تجربهمم يبلات 1.00 عدد\"\\n        }\\n    ],\\n    \"productImageUrl\": [{\\n        \"language\": \"ar-EG\",\\n        \"value\": \"https://drive.google.com/file/d/16QZpxR0Ms8bOVbY_Y5wVGh8ID5egAW9Q/view?usp=sharing\"\\n    }],\\n    \"netContent\": [{\\n        \"unitCode\": \"1N\",\\n        \"value\": \"1.000\"\\n    }],\\n    \"countryOfSaleCode\": [{\\n            \"numeric\": \"533\",\\n            \"alpha2\": \"AW\",\\n            \"alpha3\": \"ABW\"\\n        },\\n        {\\n            \"numeric\": \"031\",\\n            \"alpha2\": \"AZ\",\\n            \"alpha3\": \"AZE\"\\n        },\\n        {\\n            \"numeric\": \"724\",\\n            \"alpha2\": \"ES\",\\n            \"alpha3\": \"ESP\"\\n        }\\n    ],\\n    \"licenseeName\": \"GS1 Egypt\",\\n    \"dateUpdated\": \"2022-06-06T11:09:58.6339129Z\",\\n    \"isComplete\": true\\n}]",
+      "targets": [],
+      "value": "brand_en_R"
+    }, {
+      "id": "d2f6829c-81a8-4822-a1b4-4c96f220d1ee",
+      "comment": "",
+      "command": "//echo",
+      "target": "${L_gtin}${gtin}${brand_en_L}${brand_en}${brand_en_R}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dea6c5ff-fa78-4271-8756-baa817bc5a36",
+      "comment": "",
+      "command": "store",
+      "target": "[{ \"gtin\": \"06225000528185\", \"gpcCategoryCode\": \"10003690\", \"brandName\": [{ \"language\": \"en-US\", \"value\": \"TESTYy\" }, { \"language\": \"ar-EG\", \"value\": \"تجربهمم\" } ], \"productDescription\": [{ \"language\": \"en-US\", \"value\": \"TESTYy adfsdt 1.00 Count\" }, { \"language\": \"ar-EG\", \"value\": \"تجربهمم يبلات 1.00 عدد\" } ], \"productImageUrl\": [{ \"language\": \"ar-EG\", \"value\": \"https://drive.google.com/file/d/16QZpxR0Ms8bOVbY_Y5wVGh8ID5egAW9Q/view?usp=sharing\" }], \"netContent\": [{ \"unitCode\": \"1N\", \"value\": \"1.000\" }], \"countryOfSaleCode\": [{ \"numeric\": \"533\", \"alpha2\": \"AW\", \"alpha3\": \"ABW\" }, { \"numeric\": \"031\", \"alpha2\": \"AZ\", \"alpha3\": \"AZE\" }, { \"numeric\": \"724\", \"alpha2\": \"ES\", \"alpha3\": \"ESP\" } ], \"licenseeName\": \"GS1 Egypt\", \"dateUpdated\": \"2022-06-06T11:09:58.6339129Z\", \"isComplete\": true }]",
+      "targets": [],
+      "value": "compare"
+    }, {
+      "id": "5fcc03d6-02ec-46cb-b78a-7239bf0ad14e",
+      "comment": "",
+      "command": "echo",
+      "target": "${compare}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6335945a-bdc7-4a2d-9629-f21fe6e2b8d4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.panel:nth-child(3) > pre",
+      "targets": [],
+      "value": "${product_json}"
+    }, {
+      "id": "e9ff692e-26ed-4c2d-945b-4288ab8fff8b",
+      "comment": "",
+      "command": "assert",
+      "target": "compare",
+      "targets": [],
+      "value": "${abc}"
+    }, {
+      "id": "f1813e19-06ac-4c8a-ba42-acd7bef1996f",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.panel:nth-child(3) > pre",
+      "targets": [],
+      "value": "${L_gtin}${gtin}${R_gtin}"
+    }, {
+      "id": "cbedbb4a-4faf-4ef2-b33a-50693da97391",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.panel:nth-child(3) > pre",
+      "targets": [],
+      "value": "${compare}"
+    }, {
+      "id": "49a4aa74-d190-4139-8d8e-13ec89445e02",
+      "comment": "",
+      "command": "//if",
+      "target": "${product_json}===${compare}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6acb835d-f330-4405-a54c-b3e2d1e44071",
+      "comment": "",
+      "command": "//executeScript",
+      "target": "return \"T\"",
+      "targets": [],
+      "value": "R"
+    }, {
+      "id": "14283a8e-5b1f-49c9-a679-18e30449a918",
+      "comment": "",
+      "command": "//else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a07f2a6b-ed8a-40de-8daf-6c54cabd7596",
+      "comment": "",
+      "command": "//executeScript",
+      "target": "return \"F\"",
+      "targets": [],
+      "value": "R"
+    }, {
+      "id": "499b71dd-0f50-4601-a0ab-2395c58bdce3",
+      "comment": "",
+      "command": "//end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "483e13b1-b051-454c-87e6-f80395132674",
+      "comment": "",
+      "command": "//assert",
+      "target": "R",
+      "targets": [],
+      "value": "T"
+    }, {
+      "id": "b5f0dda9-90f3-4688-b543-8cea01da7ec3",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "caeef9aa-44fe-499a-8560-9d396569a785",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8d9532fe-44a7-467d-9027-e55946846f4b"]
+  }],
+  "urls": ["https://gs1eg-is-mygs1-fe-beta.azurewebsites.net/"],
+  "plugins": []
+}

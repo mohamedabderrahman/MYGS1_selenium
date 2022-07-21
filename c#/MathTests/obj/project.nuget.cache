@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Im0Odc1VUTIjFvq6CV2Iaq5PuQLZtB8zHVvQAhjWKmyTgEGTTvFBt5hi5uhMzBV31xJ4MN46a9FIc5i39cfUDQ==",
+  "dgSpecHash": "CexoKP0O6KyLQupdXoPkQ3PofvTovRCysOXQ2whZVTce8rVQ+KuAei2fFLU2oQJSNvcZKiG5Y3xc1/wCakKoDA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\mohamed.abdelrahman\\Desktop\\CCC\\MathTests\\MathTests.csproj",
+  "projectFilePath": "D:\\work\\MyGS1 IS\\selinum\\c#\\MathTests\\MYGS1Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mohamed.abdelrahman\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\mohamed.abdelrahman\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
