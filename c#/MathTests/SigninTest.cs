@@ -53,11 +53,99 @@ public class SuiteTests : IDisposable {
         }
 		driver.FindElement(By.CssSelector("#escape-btn")).Click();
 
-		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
-			wait.Until(driver => driver.FindElement(By.LinkText("لوحة التحكم")).Displayed);
-		}
+		//{
+		//	WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+		//	wait.Until(driver => driver.FindElement(By.LinkText("لوحة التحكم")).Displayed);
+		//}
 
-		Assert.Equal(driver.FindElement(By.LinkText("لوحة التحكم")).Text, "لوحة التحكم");
-	}
+		//Assert.Equal(driver.FindElement(By.LinkText("لوحة التحكم")).Text, "لوحة التحكم");
+        ///////////////////////////////////////////////////////
+        driver.Navigate().GoToUrl("https://gs1eg-is-mygs1-fe-beta.azurewebsites.net/dashboard");
+        driver.Manage().Window.Size = new System.Drawing.Size(1136, 816);
+
+        //Assert.Equal(driver.FindElement(By.XPath("//h1[contains(.,\'لوحة التحكم\')]")).Text, "لوحة التحكم");
+        {
+            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+            wait.Until(driver => driver.FindElement(By.LinkText("إدارة المنتجات")).Displayed);
+        }
+        driver.FindElement(By.LinkText("إدارة المنتجات")).Click();
+
+        {
+            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+            wait.Until(driver => driver.FindElement(By.CssSelector(".walk-through-messages-p")).Displayed);
+        }
+        driver.FindElement(By.CssSelector("#escape-btn")).Click();
+        {
+            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+            wait.Until(driver => driver.FindElement(By.XPath("//span[contains(.,\'+ اضافة منتج\')]")).Displayed);
+        }
+
+        driver.FindElement(By.XPath("//span[contains(.,\'+ اضافة منتج\')]")).Click();
+
+        {
+            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+            wait.Until(driver => driver.FindElement(By.XPath("//button[contains(.,\'اضافة منتج فردى\')]")).Displayed);
+        }
+        Assert.Equal(driver.FindElement(By.XPath("//button[contains(.,\'اضافة منتج فردى\')]")).Text, "اضافة منتج فردى");
+        driver.FindElement(By.XPath("//button[contains(.,\'اضافة منتج فردى\')]")).Click();
+        {
+            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+            wait.Until(driver => driver.FindElement(By.CssSelector(".walk-through-messages-p")).Displayed);
+        }
+        driver.FindElement(By.CssSelector("#escape-btn")).Click();
+        {
+            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+            wait.Until(driver => driver.FindElement(By.XPath("//input[@name=\'nameAr\']")).Displayed);
+        }
+        driver.FindElement(By.XPath("//input[@name=\'nameAr\']")).SendKeys("منتج");
+        driver.FindElement(By.XPath("//input[@name=\"nameEn\"]")).SendKeys("product");
+        driver.FindElement(By.XPath("//input[@name=\"variantAr\"]")).SendKeys("متغير");
+        driver.FindElement(By.XPath("//input[@name=\"variantEn\"]")).SendKeys("varient");
+        driver.FindElement(By.XPath("//input[@name=\"gpc\"]")).Click();
+        Assert.Equal(driver.FindElement(By.XPath("//p[contains(.,\'الشوح البلسمي (التنوب البلسمي) - نباتات حية\')]")).Text, "الشوح البلسمي (التنوب البلسمي) - نباتات حية");
+        driver.FindElement(By.XPath("//p[contains(.,\'الشوح البلسمي (التنوب البلسمي) - نباتات حية\')]")).Click();
+        driver.FindElement(By.XPath("//input[@name=\"brand\"]")).Click();
+        Assert.Equal(driver.FindElement(By.XPath("//p[contains(.,\'تجربهمم\')]")).Text, "تجربهمم");
+        driver.FindElement(By.XPath("//p[contains(.,\'تجربهمم\')]")).Click();
+        driver.FindElement(By.XPath("//input[@name=\"gcp\"]")).Clear();
+        driver.FindElement(By.XPath("//span/p")).Click();
+        driver.FindElement(By.CssSelector(".ng-input > input")).Click();
+        Assert.Equal(driver.FindElement(By.XPath("//span[contains(.,\'إثيوبيا\')]")).Text, "إثيوبيا");
+        driver.FindElement(By.XPath("//span[contains(.,\'إثيوبيا\')]")).Click();
+        driver.FindElement(By.Id("mat-input-11")).Click();
+        driver.FindElement(By.Id("mat-input-11")).SendKeys("1");
+        vars["x"] = driver.FindElement(By.Id("mat-input-11")).GetAttribute("value");
+        Console.WriteLine(vars["x"].ToString());
+        driver.FindElement(By.CssSelector(".clear-ng-mat-validation > .container")).Click();
+        driver.FindElement(By.XPath("//input[@name=\"unitOfMeasure\"]")).Click();
+        driver.FindElement(By.XPath("//p[contains(.,\'صندوق مربع\')]")).Click();
+        driver.FindElement(By.LinkText("اضف الملف")).Click();
+        driver.FindElement(By.CssSelector(".upload-area > .ng-star-inserted:nth-child(1)")).SendKeys("C:\\fakepath\\Screenshot (22).png");
+        Assert.Equal(driver.FindElement(By.XPath("//p[contains(.,\'صندوق مربع\')]")).Text, "صندوق مربع");
+        {
+            var element = driver.FindElement(By.XPath("//span[contains(.,\'إضافة المنتج\')]"));
+            Actions builder = new Actions(driver);
+            builder.MoveToElement(element).Perform();
+        }
+        driver.FindElement(By.XPath("//span[contains(.,\'إضافة المنتج\')]")).Click();
+        {
+            var element = driver.FindElement(By.XPath("//button[contains(.,\'إضافة وانشاء باركود\')]"));
+            Actions builder = new Actions(driver);
+            builder.MoveToElement(element).Perform();
+        }
+        driver.FindElement(By.XPath("//button[contains(.,\'إضافة وانشاء باركود\')]")).Click();
+        {
+            var element = driver.FindElement(By.XPath("//span[contains(.,\'إدارة المنتجات\')]"));
+            Actions builder = new Actions(driver);
+            builder.MoveToElement(element).Perform();
+        }
+        driver.FindElement(By.XPath("//span[contains(.,\'إدارة المنتجات\')]")).Click();
+        {
+            var element = driver.FindElement(By.TagName("body"));
+            Actions builder = new Actions(driver);
+            builder.MoveToElement(element, 0, 0).Perform();
+        }
+        js.ExecuteScript("window.scrollTo(0,0)");
+        //driver.Close();
+    }
 }
