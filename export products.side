@@ -1,0 +1,76 @@
+{
+  "id": "78445e37-3700-47a6-b50d-6b10c2e33200",
+  "version": "2.0",
+  "name": "export products",
+  "url": "https://gs1eg-is-mygs1-fe-beta.azurewebsites.net",
+  "tests": [{
+    "id": "6ae02da3-f466-445c-b3fa-c74c197d1720",
+    "name": "export products",
+    "commands": [{
+      "id": "31ac1d5a-a981-46ba-95bb-012806c636e0",
+      "comment": "",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08778b65-025b-45b4-8eb4-a50101bf5686",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1144x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c80439c9-ad09-4f67-84c4-5a343c106923",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=إدارة المنتجات",
+      "targets": [
+        ["linkText=إدارة المنتجات", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة المنتجات')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/products')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة المنتجات')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90b5ed62-b76c-4d7a-aaaa-1abfb0a2562f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@id='walk-through-step-2']/li[2]/button/span",
+      "targets": [
+        ["css=.cdk-focused > .mat-button-wrapper", "css:finder"],
+        ["xpath=//ul[@id='walk-through-step-2']/li[2]/button/span", "xpath:idRelative"],
+        ["xpath=//li[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,' تحميل الكل')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55df86d9-cb6c-4cb0-a623-321522113cf4",
+      "comment": "",
+      "command": "waitForText",
+      "target": "css=app-progress-bar:nth-child(2) span",
+      "targets": [],
+      "value": "0%"
+    }, {
+      "id": "79637b54-fbea-4115-9e03-f327d979ef74",
+      "comment": "",
+      "command": "waitForElementNotPresent",
+      "target": "css=app-progress-bar:nth-child(2) span",
+      "targets": [],
+      "value": "0%"
+    }]
+  }],
+  "suites": [{
+    "id": "b878310f-4b5d-496f-9f07-2429ae936960",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6ae02da3-f466-445c-b3fa-c74c197d1720"]
+  }],
+  "urls": ["https://gs1eg-is-mygs1-fe-beta.azurewebsites.net/"],
+  "plugins": []
+}
