@@ -1,0 +1,424 @@
+{
+  "id": "c3a5e70b-0132-4e4e-a9b8-610da51f45b8",
+  "version": "2.0",
+  "name": "import bad case",
+  "url": "https://gs1eg-is-mygs1-fe-beta.azurewebsites.net",
+  "tests": [{
+    "id": "0f6b55f0-ac3b-49a5-8483-daee008b2157",
+    "name": "import products bad case",
+    "commands": [{
+      "id": "3e92b434-5ba4-4987-9c38-531e37c22638",
+      "comment": "",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "937daf50-9933-482b-b3ae-b38dadfcd853",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1146x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a45c8b23-5228-4a00-96a0-514da6e778b3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.addProdBtn",
+      "targets": [
+        ["css=.addProdBtn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' إضافة منتج جديد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "755b00d7-3fb5-417d-8b9c-31ae54965df7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.addProdBtn",
+      "targets": [
+        ["css=.addProdBtn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' إضافة منتج جديد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d44a930-819a-4e8e-9fa8-edc6608f9f28",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.addProdBtn",
+      "targets": [
+        ["css=.addProdBtn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' إضافة منتج جديد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0baa78b-5718-4f90-a3f4-9f8154397465",
+      "comment": "",
+      "command": "click",
+      "target": "id=walk-through-step-3",
+      "targets": [
+        ["id=walk-through-step-3", "id"],
+        ["css=#walk-through-step-3", "css:finder"],
+        ["xpath=//button[@id='walk-through-step-3']", "xpath:attributes"],
+        ["xpath=//div[@id='mat-menu-panel-4']/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'اضافة مجموعة منتجات')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76b490ff-320e-445e-9748-d66963a289bc",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//span[contains(.,'100%')]",
+      "targets": [],
+      "value": "percentage"
+    }, {
+      "id": "89d5999b-f587-487e-860d-fd92fd8735f2",
+      "comment": "",
+      "command": "if",
+      "target": "${percentage}>0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "618b1d63-c23c-46d6-b50e-f7a0f6eeff1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-button-wrapper > .ng-star-inserted",
+      "targets": [
+        ["css=.mat-button-wrapper > .ng-star-inserted", "css:finder"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6384d67-fb5d-40b1-9d65-524745110a69",
+      "comment": "",
+      "command": "click",
+      "target": "css=app-root > .ng-star-inserted:nth-child(5)",
+      "targets": [
+        ["css=app-root > .ng-star-inserted:nth-child(5)", "css:finder"],
+        ["xpath=//app-adding-bulk-products", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a635fa90-af41-4444-8fcb-26c117490460",
+      "comment": "",
+      "command": "//mouseOver",
+      "target": "xpath=//span[contains(.,'100%')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "149c2219-c315-455c-afd1-357e1f0ca6e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-button-wrapper > .ng-star-inserted",
+      "targets": [
+        ["css=.mat-button-wrapper > .ng-star-inserted", "css:finder"],
+        ["xpath=//button[@id='walk-through-step-3']/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "033d06b1-817f-41e5-8d83-d8b488cd8dd1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.py-2 > .mat-button-wrapper",
+      "targets": [
+        ["css=.py-2 > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[2]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'إدارة المنتجات')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d353a35c-0879-49c3-86ca-6d44d22d85f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.py-2 > .mat-button-wrapper",
+      "targets": [
+        ["css=.py-2 > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[2]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'إدارة المنتجات')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f03bd8da-2d1e-475c-a72a-d831bb410e8d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc48c7b6-48e2-4909-9c80-b67ec70e1194",
+      "comment": "",
+      "command": "assertSelectedValue",
+      "target": "css=.progress-container > span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc7e3530-1bf7-4406-9954-0703a4bd0810",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "677f524a-24b4-4728-8a14-543ed8c5bd0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.addProdBtn > .mat-button-wrapper",
+      "targets": [
+        ["css=.addProdBtn > .mat-button-wrapper", "css:finder"],
+        ["xpath=//ul[@id='walk-through-step-2']/li[4]/button/span", "xpath:idRelative"],
+        ["xpath=//li[4]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'+ اضافة منتج')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "149e85cd-cebf-44e9-8109-b05ff20fe91e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mat-menu-item:nth-child(2)",
+      "targets": [
+        ["css=.mat-menu-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='mat-menu-panel-25']/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'اضافة مجموعة منتجات')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10418439-a39f-41a6-8a65-42d19568bee4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-focused",
+      "targets": [
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//div[@id='mat-menu-panel-25']/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'اضافة مجموعة منتجات')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45c84a7d-0188-46e6-b7e9-3baba7011c08",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-focused > .mat-button-wrapper",
+      "targets": [
+        ["css=.cdk-focused > .mat-button-wrapper", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-0']/app-bulk-type/div[3]/button[2]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'التالي')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac6f71c0-4e7f-44d7-80c3-d477a726682c",
+      "comment": "",
+      "command": "click",
+      "target": "id=mat-select-value-9",
+      "targets": [
+        ["id=mat-select-value-9", "id"],
+        ["css=#mat-select-value-9", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-9']", "xpath:attributes"],
+        ["xpath=//mat-select[@id='mat-select-8']/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/mat-select/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0def8353-aed1-4328-bcac-88fbd0b2f062",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-15 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-15 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-15']/span", "xpath:idRelative"],
+        ["xpath=//mat-option/span", "xpath:position"],
+        ["xpath=//span[contains(.,'301249')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfbd4108-0872-4366-830b-c929e892c4e8",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=#mat-option-15 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-15 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-15']/span", "xpath:idRelative"],
+        ["xpath=//mat-option/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04487320-dafd-45ab-9267-fd87a018d85a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=اضف الملف",
+      "targets": [
+        ["linkText=اضف الملف", "linkText"],
+        ["css=.cursor-pointer", "css:finder"],
+        ["xpath=//a[contains(text(),'اضف الملف')]", "xpath:link"],
+        ["xpath=//div[@id='walk-through-step-2']/app-dropzone/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//app-dropzone/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'اضف الملف')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed2bc436-ea04-402f-a2ec-65a0f0ebb2de",
+      "comment": "",
+      "command": "type",
+      "target": "css=.upload-area > .ng-star-inserted:nth-child(1)",
+      "targets": [
+        ["css=.upload-area > .ng-star-inserted:nth-child(1)", "css:finder"],
+        ["xpath=//input[@type='file']", "xpath:attributes"],
+        ["xpath=//div[@id='walk-through-step-2']/app-dropzone/div/div/input", "xpath:idRelative"],
+        ["xpath=//app-dropzone/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\Without_barcode 1 GTIN .xlsx"
+    }, {
+      "id": "8f30af84-0d53-4235-ab9c-f0e06fd36d83",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mat-button-wrapper > .ng-star-inserted",
+      "targets": [
+        ["css=.mat-button-wrapper > .ng-star-inserted", "css:finder"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e42a5119-a435-4d56-81aa-d6fe1f8c4d15",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-button-wrapper > .ng-star-inserted",
+      "targets": [
+        ["css=.mat-button-wrapper > .ng-star-inserted", "css:finder"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfda2c53-fa34-4402-a019-e8b1047f78cb",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,43.20000076293945)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38c878b3-506e-420a-b9f9-2788bc3b0fd1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-button-wrapper > .ng-star-inserted",
+      "targets": [
+        ["css=.mat-button-wrapper > .ng-star-inserted", "css:finder"],
+        ["xpath=//button[@id='walk-through-step-3']/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5afe8bb1-3e71-48f0-9bed-12b876707564",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,94.4000015258789)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14636478-f260-40bc-b474-72028c4b3631",
+      "comment": "",
+      "command": "click",
+      "target": "css=.py-2",
+      "targets": [
+        ["css=.py-2", "css:finder"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'إدارة المنتجات')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ef72a7d-3779-4c2e-8076-7a3d7d6c3f38",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mat-row:nth-child(3) .btn:nth-child(4)",
+      "targets": [
+        ["css=.mat-row:nth-child(3) .btn:nth-child(4)", "css:finder"],
+        ["xpath=//td[7]/div/button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'المزيد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5827205e-5635-47e1-9911-4045a116a945",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40a9a720-d15b-4458-9add-84e327e4a6b7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.col-md-6 .mat-focus-indicator:nth-child(4) path",
+      "targets": [
+        ["css=.col-md-6 .mat-focus-indicator:nth-child(4) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e604536f-ca7e-4c49-aefe-cf8ae1de9e06",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.col-md-6 .mat-focus-indicator:nth-child(4) path",
+      "targets": [
+        ["css=.col-md-6 .mat-focus-indicator:nth-child(4) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "54731fae-ef07-4fd1-a923-cd753e2263ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.plus-span",
+      "targets": [
+        ["css=.plus-span", "css:finder"],
+        ["xpath=//ul[@id='walk-through-step-2']/li[4]/button/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7a86260-9b15-4ebd-b0c2-a4bd5b329dcf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-focused",
+      "targets": [
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//div[@id='mat-menu-panel-46']/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'اضافة مجموعة منتجات')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f2807e0-dfe5-42ee-a920-f13f9e686030",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.px-5:nth-child(1)",
+      "targets": [
+        ["css=.px-5:nth-child(1)", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-1']/app-bulk-type/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec055702-1dc1-4dfb-bb06-23126b2fbf62",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-focused",
+      "targets": [
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-1']/app-bulk-type/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "691cea0b-d2e7-4e21-8e25-f311b3947dc2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0f6b55f0-ac3b-49a5-8483-daee008b2157"]
+  }],
+  "urls": ["https://gs1eg-is-mygs1-fe-beta.azurewebsites.net/"],
+  "plugins": []
+}

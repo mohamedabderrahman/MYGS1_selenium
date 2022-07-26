@@ -117,7 +117,7 @@
       "id": "565439f0-db32-4c5c-99b9-c0f4107aed9c",
       "comment": "",
       "command": "click",
-      "target": "xpath=//span[contains(.,'50005281')]",
+      "target": "css=#mat-option-2 > .mat-option-text",
       "targets": [
         ["css=#mat-option-2 > .mat-option-text", "css:finder"],
         ["xpath=//mat-option[@id='mat-option-2']/span", "xpath:idRelative"],
@@ -145,6 +145,28 @@
       "targets": [],
       "value": "D:\\work\\MyGS1 IS\\products sheets\\Without_barcode 1 GTIN .xlsx"
     }, {
+      "id": "4d1b4418-94ff-4600-8ed9-0bf39a887ca1",
+      "comment": "",
+      "command": "waitForText",
+      "target": "css=.progress-container > span",
+      "targets": [
+        ["css=.progress-container > span", "css:finder"],
+        ["xpath=//div[@id='walk-through-step-2']/app-dropzone/div/div/div[2]/div/app-progress-bar/div/span", "xpath:idRelative"],
+        ["xpath=//app-progress-bar/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'100%')]", "xpath:innerText"]
+      ],
+      "value": "100%"
+    }, {
+      "id": "def940fa-5d60-41e5-acf9-6b185fcf3623",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.mat-button-wrapper > .ng-star-inserted",
+      "targets": [
+        ["css=.mat-button-wrapper > .ng-star-inserted", "css:finder"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
       "id": "754bdcb9-4c42-40ff-b3c0-46354dfc8030",
       "comment": "",
       "command": "click",
@@ -154,6 +176,13 @@
         ["xpath=//button/span/span", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "753f593b-a724-4ac4-bb2a-5dc63d5ee0ee",
+      "comment": "",
+      "command": "waitForText",
+      "target": "css=strong",
+      "targets": [],
+      "value": "تمت المراجعة والتحقق من الملف بنجاح"
     }, {
       "id": "56e24183-be75-4f76-b2d1-58ce083f034e",
       "comment": "",
@@ -172,6 +201,61 @@
       "target": "window.scrollTo(0,94.4000015258789)",
       "targets": [],
       "value": ""
+    }, {
+      "id": "80daec46-ccff-4597-99ea-a2d1a569744a",
+      "comment": "",
+      "command": "click",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'تمت المراجعة والتحقق من الملف بنجاح')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e99d69f-e02c-4fbb-bcfd-8a17a93ebcfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'تمت المراجعة والتحقق من الملف بنجاح')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6adb5a2-7f11-4868-b94f-af7374bd4a4e",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'تمت المراجعة والتحقق من الملف بنجاح')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec741bdc-dc68-46ad-89f3-2836855de625",
+      "comment": "",
+      "command": "click",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'تمت المراجعة والتحقق من الملف بنجاح')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d19e69c-f33f-411a-8100-98d07b0a1f14",
+      "comment": "",
+      "command": "waitForText",
+      "target": "xpath=//strong[contains(.,'تمت العملية بنجاح')]",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'تمت العملية بنجاح')]", "xpath:innerText"]
+      ],
+      "value": "تمت العملية بنجاح"
     }, {
       "id": "b1dc9522-3b67-457c-94a7-06fb9c2330a5",
       "comment": "",
