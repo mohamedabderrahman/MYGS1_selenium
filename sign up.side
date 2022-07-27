@@ -1,0 +1,288 @@
+{
+  "id": "d14c06c1-856f-479a-a56c-7cd091a7eecc",
+  "version": "2.0",
+  "name": "sign up",
+  "url": "https://gs1eg-is-mygs1-fe-beta.azurewebsites.net",
+  "tests": [{
+    "id": "b82088f1-a083-49c2-9771-bfefcad03998",
+    "name": "sign up",
+    "commands": [{
+      "id": "58f8eadb-8f66-4a60-8be1-65e1e1a0515a",
+      "comment": "",
+      "command": "open",
+      "target": "/auth/signup",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a390caad-e1ce-4188-9da8-a7fe75d15d03",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1148x799",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff5dccae-f049-4ecb-8fe2-e073e687ee37",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c43-3 > .mat-form-field-infix",
+      "targets": [
+        ["css=.ng-tns-c43-3 > .mat-form-field-infix", "css:finder"],
+        ["xpath=//mat-form-field/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "136d57e1-5657-4f92-81fd-4c40cbfd92d3",
+      "comment": "",
+      "command": "type",
+      "target": "id=mat-input-0",
+      "targets": [
+        ["id=mat-input-0", "id"],
+        ["name=firstName", "name"],
+        ["css=#mat-input-0", "css:finder"],
+        ["xpath=//input[@id='mat-input-0']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "aa"
+    }, {
+      "id": "141e8f0c-fa5e-4c54-b075-ecc91c9abeb6",
+      "comment": "",
+      "command": "type",
+      "target": "id=mat-input-1",
+      "targets": [
+        ["id=mat-input-1", "id"],
+        ["name=lastName", "name"],
+        ["css=#mat-input-1", "css:finder"],
+        ["xpath=//input[@id='mat-input-1']", "xpath:attributes"],
+        ["xpath=//div[2]/mat-form-field/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": "aa"
+    }, {
+      "id": "816d155f-bc44-4a47-872f-b7f5aded3cb2",
+      "comment": "",
+      "command": "type",
+      "target": "id=mat-input-2",
+      "targets": [
+        ["id=mat-input-2", "id"],
+        ["name=email", "name"],
+        ["css=#mat-input-2", "css:finder"],
+        ["xpath=//input[@id='mat-input-2']", "xpath:attributes"],
+        ["xpath=//div[3]/mat-form-field/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": "aa@aa.aattww"
+    }, {
+      "id": "d5666ac3-8898-449e-9c32-fd06597623e2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.action-div > .ng-star-inserted",
+      "targets": [
+        ["css=.action-div > .ng-star-inserted", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'التالي (1/3)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da87f499-08c8-4f75-8089-225fc0d4b7e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.action-div > .ng-star-inserted",
+      "targets": [
+        ["css=.action-div > .ng-star-inserted", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'التالي (1/3)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52fb2191-0d75-4ee2-bc2a-9ac40b229a78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-dirty > .row > .mat-form-field-div-flag",
+      "targets": [
+        ["css=.ng-dirty > .row > .mat-form-field-div-flag", "css:finder"],
+        ["xpath=//form[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a067161-532f-4ffc-a994-9f171c75ae82",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=#phone",
+      "targets": [],
+      "value": "${KEY_BACKSPACE}"
+    }, {
+      "id": "8a3b4f2c-552a-4c72-91ff-96c18ef75cb0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//ngx-intl-tel-input/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cd6487d-745a-4fcd-b718-9e35728f3a69",
+      "comment": "",
+      "command": "type",
+      "target": "css=#phone",
+      "targets": [],
+      "value": "0123456789011111"
+    }, {
+      "id": "10e76a43-605d-4c1b-a444-0f96bdb69b25",
+      "comment": "",
+      "command": "//sendKeys",
+      "target": "css=#phone",
+      "targets": [],
+      "value": "${KEY_BACKSPACE}"
+    }, {
+      "id": "2e9965ee-4c94-411e-9455-1d3fe21cb82e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c49-7 > .mat-select-arrow",
+      "targets": [
+        ["css=.ng-tns-c49-7 > .mat-select-arrow", "css:finder"],
+        ["xpath=//mat-select[@id='mat-select-2']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/mat-select/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4eaef13-8dd7-4593-a28f-9cbe40e3cd50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-select-placeholder",
+      "targets": [
+        ["css=.mat-select-placeholder", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-3']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/mat-select/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'الجهة التي رشحتك ل GS1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98ccb8fa-20c2-40c2-968e-74c067a9a1ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-5 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-5 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-5']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'أمازون')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e140ed92-88a4-4f7a-9dee-a511e2cb2562",
+      "comment": "",
+      "command": "click",
+      "target": "css=.action-div > .ng-star-inserted",
+      "targets": [
+        ["css=.action-div > .ng-star-inserted", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'التالي (2/3)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1c5eeb0-311d-47a3-8a9b-05d4bc566f0b",
+      "comment": "",
+      "command": "type",
+      "target": "id=mat-input-3",
+      "targets": [
+        ["id=mat-input-3", "id"],
+        ["name=password", "name"],
+        ["css=#mat-input-3", "css:finder"],
+        ["xpath=//input[@id='mat-input-3']", "xpath:attributes"],
+        ["xpath=//form[3]/div/div/mat-form-field/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "0cc621cb-918e-4b80-8ba6-7eb556ed5d69",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c43-9 > .mat-form-field-infix",
+      "targets": [
+        ["css=.ng-tns-c43-9 > .mat-form-field-infix", "css:finder"],
+        ["xpath=//form[3]/div/div[2]/mat-form-field/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c29884c-e04b-409e-9abe-e9999be69582",
+      "comment": "",
+      "command": "type",
+      "target": "id=mat-input-4",
+      "targets": [
+        ["id=mat-input-4", "id"],
+        ["name=confirmPassword", "name"],
+        ["css=#mat-input-4", "css:finder"],
+        ["xpath=//input[@id='mat-input-4']", "xpath:attributes"],
+        ["xpath=//form[3]/div/div[2]/mat-form-field/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "03e7d291-6a30-4300-98f3-1bdd9cee790a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-checkbox-inner-container",
+      "targets": [
+        ["css=.mat-checkbox-inner-container", "css:finder"],
+        ["xpath=//mat-checkbox[@id='mat-checkbox-1']/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d27710a8-97d5-4654-82e3-7772e71e1368",
+      "comment": "",
+      "command": "click",
+      "target": "css=.action-div > .ng-star-inserted",
+      "targets": [
+        ["css=.action-div > .ng-star-inserted", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'التالي (3/3)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc14e89f-e95c-48ae-bcae-add7d11ec5a2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.action-div > .ng-star-inserted",
+      "targets": [
+        ["css=.action-div > .ng-star-inserted", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'التالي (3/3)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90b0f03c-3dd4-4d6f-8cf3-897b1f37147e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btnSmall > .mat-button-wrapper",
+      "targets": [
+        ["css=.btnSmall > .mat-button-wrapper", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-0']/app-check-email/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'تم')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40a1db48-c1de-49da-bc77-3273306396da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnSmall > .mat-button-wrapper",
+      "targets": [
+        ["css=.btnSmall > .mat-button-wrapper", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-0']/app-check-email/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'تم')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0839dbf5-7634-4176-9808-b6d3a45fe67a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b82088f1-a083-49c2-9771-bfefcad03998"]
+  }],
+  "urls": ["https://gs1eg-is-mygs1-fe-beta.azurewebsites.net/"],
+  "plugins": []
+}

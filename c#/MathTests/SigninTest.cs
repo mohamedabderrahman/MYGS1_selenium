@@ -189,6 +189,47 @@ public class SuiteTests : IDisposable
 		//driver.Close();
 	}
 	[Fact]
+	public void Signup()
+	{
+		driver.Navigate().GoToUrl("https://gs1eg-is-mygs1-fe-beta.azurewebsites.net/auth/signup");
+		driver.Manage().Window.Size = new System.Drawing.Size(1148, 799);
+		driver.FindElement(By.CssSelector(".ng-tns-c43-3 > .mat-form-field-infix")).Click();
+		driver.FindElement(By.Id("mat-input-0")).SendKeys("aa");
+		driver.FindElement(By.Id("mat-input-1")).SendKeys("aa");
+		driver.FindElement(By.Id("mat-input-2")).SendKeys("aa@aa.aattww");
+		{
+			var element = driver.FindElement(By.CssSelector(".action-div > .ng-star-inserted"));
+			Actions builder = new Actions(driver);
+			builder.MoveToElement(element).Perform();
+		}
+		driver.FindElement(By.CssSelector(".action-div > .ng-star-inserted")).Click();
+		driver.FindElement(By.CssSelector(".ng-dirty > .row > .mat-form-field-div-flag")).Click();
+		driver.FindElement(By.CssSelector("#phone")).SendKeys(Keys.Backspace);
+		driver.FindElement(By.CssSelector("#phone")).Click();
+		driver.FindElement(By.CssSelector("#phone")).SendKeys("0123456789011111");
+		driver.FindElement(By.CssSelector(".ng-tns-c49-7 > .mat-select-arrow")).Click();
+		driver.FindElement(By.CssSelector(".mat-select-placeholder")).Click();
+		driver.FindElement(By.CssSelector("#mat-option-5 > .mat-option-text")).Click();
+		driver.FindElement(By.CssSelector(".action-div > .ng-star-inserted")).Click();
+		driver.FindElement(By.Id("mat-input-3")).SendKeys("12345678");
+		driver.FindElement(By.CssSelector(".ng-tns-c43-9 > .mat-form-field-infix")).Click();
+		driver.FindElement(By.Id("mat-input-4")).SendKeys("12345678");
+		driver.FindElement(By.CssSelector(".mat-checkbox-inner-container")).Click();
+		driver.FindElement(By.CssSelector(".action-div > .ng-star-inserted")).Click();
+		{
+			var element = driver.FindElement(By.CssSelector(".action-div > .ng-star-inserted"));
+			Actions builder = new Actions(driver);
+			builder.MoveToElement(element).Perform();
+		}
+		{
+			var element = driver.FindElement(By.CssSelector(".btnSmall > .mat-button-wrapper"));
+			Actions builder = new Actions(driver);
+			builder.MoveToElement(element).Perform();
+		}
+		driver.FindElement(By.CssSelector(".btnSmall > .mat-button-wrapper")).Click();
+	}
+
+	[Fact]
 	public void Importproducts()
 	{///sign in first///
 

@@ -1,0 +1,401 @@
+{
+  "id": "d07c16a4-8b6e-463f-bddc-dd5ef84c807e",
+  "version": "2.0",
+  "name": "purchase",
+  "url": "https://gs1eg-is-mygs1-fe-beta.azurewebsites.net",
+  "tests": [{
+    "id": "1b6d0386-dbde-49c9-8089-e9fbc4ac40e7",
+    "name": "purchase",
+    "commands": [{
+      "id": "085217f4-8ecb-462f-b005-50da0e744732",
+      "comment": "",
+      "command": "open",
+      "target": "/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13ac68a7-d77d-4b99-9b56-ce6b3555d94c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1146x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a508c6ae-208b-4266-8a86-e168b5350ce4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=إدارة بنوك الأرقام",
+      "targets": [
+        ["linkText=إدارة بنوك الأرقام", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة بنوك الأرقام')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gcp')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة بنوك الأرقام')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85353e3c-fad1-4ec4-b831-031b565adfcd",
+      "comment": "",
+      "command": "waitForText",
+      "target": "css=.addProdBtn > .mat-button-wrapper",
+      "targets": [
+        ["css=.addProdBtn > .mat-button-wrapper", "css:finder"],
+        ["xpath=//li[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,' شراء بنك أرقام جديد')]", "xpath:innerText"]
+      ],
+      "value": "شراء بنك أرقام جديد"
+    }, {
+      "id": "d54d29c8-1ca2-47ea-9027-9af8c397b829",
+      "comment": "",
+      "command": "click",
+      "target": "css=.addProdBtn > .mat-button-wrapper",
+      "targets": [
+        ["css=.addProdBtn > .mat-button-wrapper", "css:finder"],
+        ["xpath=//li[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,' شراء بنك أرقام جديد')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9fcb78d-d589-4813-88e0-b66cc1726c8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-6:nth-child(3) .mat-button-wrapper",
+      "targets": [
+        ["css=.col-md-6:nth-child(3) .mat-button-wrapper", "css:finder"],
+        ["xpath=(//button[@id='buy-package']/span)[7]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[3]/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5e0b37b-5ca8-41cb-82df-d27b21e12f98",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.dismiss-btn img",
+      "targets": [
+        ["css=.dismiss-btn img", "css:finder"],
+        ["xpath=//div[@id='mat-dialog-title-0']/button/span/img", "xpath:idRelative"],
+        ["xpath=//app-nextstep-or-stay/div/button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbf9619b-9515-4c2a-bcec-dcfa13984615",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dismiss-btn img",
+      "targets": [
+        ["css=.dismiss-btn img", "css:finder"],
+        ["xpath=//div[@id='mat-dialog-title-0']/button/span/img", "xpath:idRelative"],
+        ["xpath=//app-nextstep-or-stay/div/button/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "277a5e7b-02c7-45fc-8cb1-f2a706a8ca97",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-4 > .mat-button-wrapper",
+      "targets": [
+        ["css=.mb-4 > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'التالي ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b72a7dce-3b8b-43df-a699-22a97666ca23",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mb-4 > .mat-button-wrapper",
+      "targets": [
+        ["css=.mb-4 > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'التالي ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33773868-f5ca-4df3-9239-31ba1049632a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-checkbox-7 .mat-checkbox-inner-container",
+      "targets": [
+        ["css=#mat-checkbox-7 .mat-checkbox-inner-container", "css:finder"],
+        ["xpath=//mat-checkbox[@id='mat-checkbox-7']/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75ceb23a-56a6-4a4c-9da4-5d8c3c0a2265",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.form-control",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c12fd76-e374-482a-a25d-2535a1d1d492",
+      "comment": "",
+      "command": "//waitForText",
+      "target": "css=.ng-tns-c78-20 > div > span:nth-child(3)",
+      "targets": [],
+      "value": "عند استخدامك لهذه الطريقة سوف يتم تنشيط حسابك تلقائياً"
+    }, {
+      "id": "0a9d3e21-8917-42dc-bb1a-f0a1228b86da",
+      "comment": "",
+      "command": "//click",
+      "target": "css=#mat-checkbox-8 .mat-checkbox-inner-container",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50d229df-8f8d-4646-aeb4-b26498cd4a2f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mb-4 > .mat-button-wrapper",
+      "targets": [
+        ["css=.mb-4 > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'إدفع ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60a600ba-8fa8-4d5e-a948-d2cb51354466",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-4 > .mat-button-wrapper",
+      "targets": [
+        ["css=.mb-4 > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'إدفع ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d026c725-6184-4d1c-b183-0cf5f180d84d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa95f982-361a-4977-a55b-d964b28905d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=cardNumber",
+      "targets": [
+        ["id=cardNumber", "id"],
+        ["css=#cardNumber", "css:finder"],
+        ["xpath=//input[@id='cardNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='paymentMethodCard']/div/div/fieldset/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6efffe4c-3cc8-4a28-aeeb-59e9e7e6b634",
+      "comment": "",
+      "command": "type",
+      "target": "id=cardNumber",
+      "targets": [
+        ["id=cardNumber", "id"],
+        ["css=#cardNumber", "css:finder"],
+        ["xpath=//input[@id='cardNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='paymentMethodCard']/div/div/fieldset/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "5123450000000008"
+    }, {
+      "id": "64c3a2e0-0c56-4805-a670-3315476a52be",
+      "comment": "",
+      "command": "select",
+      "target": "id=expiryMonth",
+      "targets": [],
+      "value": "label=01"
+    }, {
+      "id": "fe95a0ce-d981-4122-9edd-922318e1e416",
+      "comment": "",
+      "command": "select",
+      "target": "id=expiryYear",
+      "targets": [],
+      "value": "label=39"
+    }, {
+      "id": "6795088f-1367-4105-915b-92e4abff70ad",
+      "comment": "",
+      "command": "type",
+      "target": "id=cardHolderName",
+      "targets": [
+        ["id=cardHolderName", "id"],
+        ["css=#cardHolderName", "css:finder"],
+        ["xpath=//input[@id='cardHolderName']", "xpath:attributes"],
+        ["xpath=//div[@id='paymentMethodCard']/div/div/fieldset/div[5]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "GS1 test"
+    }, {
+      "id": "18ffd919-d944-4b31-97cb-aaadce46ad2e",
+      "comment": "",
+      "command": "click",
+      "target": "id=csc",
+      "targets": [
+        ["id=csc", "id"],
+        ["css=#csc", "css:finder"],
+        ["xpath=//input[@id='csc']", "xpath:attributes"],
+        ["xpath=//div[@id='paymentMethodCard']/div/div/fieldset/div[6]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b8917a9-b9bd-4f56-90c3-b265682cb08c",
+      "comment": "",
+      "command": "type",
+      "target": "id=csc",
+      "targets": [
+        ["id=csc", "id"],
+        ["css=#csc", "css:finder"],
+        ["xpath=//input[@id='csc']", "xpath:attributes"],
+        ["xpath=//div[@id='paymentMethodCard']/div/div/fieldset/div[6]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "823dffe0-1131-45fc-8e93-ffb13c4bbcbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(7) > .col-md-12",
+      "targets": [
+        ["css=.row:nth-child(7) > .col-md-12", "css:finder"],
+        ["xpath=//div[@id='paymentMethodCard']/div/div/fieldset/div[6]/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5435191f-f860-43ee-b61c-4e6322c0cc83",
+      "comment": "",
+      "command": "click",
+      "target": "css=#button-row1 > .submitButton:nth-child(2)",
+      "targets": [
+        ["css=#button-row1 > .submitButton:nth-child(2)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='button-row1']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pay now')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7513bade-30b4-4d26-b9a2-55367e66a30f",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "30c0d22b-2888-452b-94b9-2db46e84ca13",
+      "comment": "",
+      "command": "click",
+      "target": "id=acssubmit",
+      "targets": [
+        ["id=acssubmit", "id"],
+        ["css=#acssubmit", "css:finder"],
+        ["xpath=//input[@id='acssubmit']", "xpath:attributes"],
+        ["xpath=//div[@id='ContainerContent']/center/form/table/tbody/tr[4]/td/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d48b386-6ac8-4e1e-a06c-da1703055f73",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "d98cf19f-625f-422c-aa03-ee250945f275",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mat-flat-button > .mat-button-wrapper",
+      "targets": [
+        ["css=.mat-flat-button > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'الذهاب الي لوحة التحكم')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fc6ac3e-08a4-4bd6-a172-7896fff35244",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-flat-button > .mat-button-wrapper",
+      "targets": [
+        ["css=.mat-flat-button > .mat-button-wrapper", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'الذهاب الي لوحة التحكم')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d28e2f9e-2eb4-4865-ac67-8adfac358cba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=إدارة الفواتير",
+      "targets": [
+        ["linkText=إدارة الفواتير", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'إدارة الفواتير')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/invoices')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'إدارة الفواتير')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bf52bd3-0264-4c9f-99ec-0f4b89ef739c",
+      "comment": "",
+      "command": "//mouseOver",
+      "target": "css=.mat-row:nth-child(1) #gs1-admin-trigger img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60f4ea0e-5e60-4842-a7dc-0f5e92b88504",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.mat-row:nth-child(1) #gs1-admin-trigger img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea6ebf3c-1648-4d0e-a61c-96b70afd4e6e",
+      "comment": "",
+      "command": "//mouseOut",
+      "target": "css=.mat-row:nth-child(1) #gs1-admin-trigger img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49c790a2-37b6-4599-afb6-3852937a8220",
+      "comment": "",
+      "command": "//click",
+      "target": "id=upload-contract",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d958823-4d5e-4248-be11-3cb496316bb0",
+      "comment": "",
+      "command": "//type",
+      "target": "css=.upload-area > .ng-star-inserted:nth-child(1)",
+      "targets": [],
+      "value": "C:\\fakepath\\Binder1.pdf"
+    }, {
+      "id": "29afcf7f-e13e-4489-bce4-8ba54d6bc6ed",
+      "comment": "",
+      "command": "//waitForElementNotPresent",
+      "target": "css=.progress-container > span",
+      "targets": [],
+      "value": "100%"
+    }]
+  }],
+  "suites": [{
+    "id": "69f0c465-5847-4257-8cbc-10e90031e9b0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1b6d0386-dbde-49c9-8089-e9fbc4ac40e7"]
+  }],
+  "urls": ["https://gs1eg-is-mygs1-fe-beta.azurewebsites.net/"],
+  "plugins": []
+}
