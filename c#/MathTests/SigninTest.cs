@@ -32,7 +32,7 @@ public class SuiteTests : IDisposable
 		driver.Manage().Window.Size = new System.Drawing.Size(1130, 816);
 		driver.FindElement(By.CssSelector(".link")).Click();
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30000));
 			wait.Until(driver => driver.FindElement(By.Id("signInName")).Displayed);
 		}
 		driver.FindElement(By.Id("signInName")).Click();
@@ -49,7 +49,7 @@ public class SuiteTests : IDisposable
 
 
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(3000));
 			wait.Until(driver => driver.FindElement(By.CssSelector(".walk-through-messages-p")).Displayed);
 		}
 		driver.FindElement(By.CssSelector("#escape-btn")).Click();
@@ -57,38 +57,13 @@ public class SuiteTests : IDisposable
 	[Fact]
 	public void insertproduct()
 	{///sign in first///
-
-		driver.Navigate().GoToUrl("https://gs1eg-is-mygs1-fe-beta.azurewebsites.net/auth/signup");
-		driver.Manage().Window.Size = new System.Drawing.Size(1130, 816);
-		driver.FindElement(By.CssSelector(".link")).Click();
-		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
-			wait.Until(driver => driver.FindElement(By.Id("signInName")).Displayed);
-		}
-		driver.FindElement(By.Id("signInName")).Click();
-		driver.FindElement(By.Id("signInName")).SendKeys("mohamed.abdelrahman@gs1eg.org");
-		driver.FindElement(By.Id("password")).Click();
-		driver.FindElement(By.Id("password")).Click();
-		{
-			var element = driver.FindElement(By.Id("password"));
-			Actions builder = new Actions(driver);
-			builder.DoubleClick(element).Perform();
-		}
-		driver.FindElement(By.Id("password")).SendKeys("12345678");
-		driver.FindElement(By.Id("next")).Click();
-
-
-		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
-			wait.Until(driver => driver.FindElement(By.CssSelector(".walk-through-messages-p")).Displayed);
-		}
-		driver.FindElement(By.CssSelector("#escape-btn")).Click();
+		Signin();
 		////sigend in /////
 		///
 
 
 		//{
-		//	WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+		//	WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(3000));
 		//	wait.Until(driver => driver.FindElement(By.LinkText("لوحة التحكم")).Displayed);
 		//}
 
@@ -99,36 +74,36 @@ public class SuiteTests : IDisposable
 
 		//Assert.Equal(driver.FindElement(By.XPath("//h1[contains(.,\'لوحة التحكم\')]")).Text, "لوحة التحكم");
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(3000));
 			wait.Until(driver => driver.FindElement(By.LinkText("إدارة المنتجات")).Displayed);
 		}
 		driver.FindElement(By.LinkText("إدارة المنتجات")).Click();
 
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(3000));
 			wait.Until(driver => driver.FindElement(By.CssSelector(".walk-through-messages-p")).Displayed);
 		}
 		driver.FindElement(By.CssSelector("#escape-btn")).Click();
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(3000));
 			wait.Until(driver => driver.FindElement(By.XPath("//span[contains(.,\'+ اضافة منتج\')]")).Displayed);
 		}
 
 		driver.FindElement(By.XPath("//span[contains(.,\'+ اضافة منتج\')]")).Click();
 
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(3000));
 			wait.Until(driver => driver.FindElement(By.XPath("//button[contains(.,\'اضافة منتج فردى\')]")).Displayed);
 		}
 		Assert.Equal(driver.FindElement(By.XPath("//button[contains(.,\'اضافة منتج فردى\')]")).Text, "اضافة منتج فردى");
 		driver.FindElement(By.XPath("//button[contains(.,\'اضافة منتج فردى\')]")).Click();
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
 			wait.Until(driver => driver.FindElement(By.CssSelector(".walk-through-messages-p")).Displayed);
 		}
 		driver.FindElement(By.CssSelector("#escape-btn")).Click();
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
 			wait.Until(driver => driver.FindElement(By.XPath("//input[@name=\'nameAr\']")).Displayed);
 		}
 		driver.FindElement(By.XPath("//input[@name=\'nameAr\']")).SendKeys("منتج");
@@ -231,63 +206,37 @@ public class SuiteTests : IDisposable
 
 	[Fact]
 	public void Importproducts()
-	{///sign in first///
-
-		driver.Navigate().GoToUrl("https://gs1eg-is-mygs1-fe-beta.azurewebsites.net/auth/signup");
-		driver.Manage().Window.Size = new System.Drawing.Size(1130, 816);
-		driver.FindElement(By.CssSelector(".link")).Click();
-		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
-			wait.Until(driver => driver.FindElement(By.Id("signInName")).Displayed);
-		}
-		driver.FindElement(By.Id("signInName")).Click();
-		driver.FindElement(By.Id("signInName")).SendKeys("mohamed.abdelrahman@gs1eg.org");
-		driver.FindElement(By.Id("password")).Click();
-		driver.FindElement(By.Id("password")).Click();
-		{
-			var element = driver.FindElement(By.Id("password"));
-			Actions builder = new Actions(driver);
-			builder.DoubleClick(element).Perform();
-		}
-		driver.FindElement(By.Id("password")).SendKeys("12345678");
-		driver.FindElement(By.Id("next")).Click();
-
-
-		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
-			wait.Until(driver => driver.FindElement(By.CssSelector(".walk-through-messages-p")).Displayed);
-		}
-		driver.FindElement(By.CssSelector("#escape-btn")).Click();
-		////sigend in /////
+	{
+		Signin();
 		///
-		
+
 
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
-			wait.Until(driver => driver.FindElement(By.LinkText("إدارة المنتجات")).Displayed);
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
+			wait.Until(driver => driver.FindElement(By.XPath("//div[@id='navbarSupportedContent']/ul/li[4]/a")).Displayed);
 		}
-		driver.FindElement(By.LinkText("إدارة المنتجات")).Click();
+		driver.FindElement(By.XPath("//div[@id='navbarSupportedContent']/ul/li[4]/a")).Click();
 
 
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
 			wait.Until(driver => driver.FindElement(By.CssSelector(".walk-through-messages-p")).Displayed);
 		}
 		driver.FindElement(By.CssSelector("#escape-btn")).Click();
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
 			wait.Until(driver => driver.FindElement(By.XPath("//span[contains(.,\'+ اضافة منتج\')]")).Displayed);
 		}
 		driver.FindElement(By.XPath("//span[contains(.,\'+ اضافة منتج\')]")).Click();
 
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
 			wait.Until(driver => driver.FindElement(By.XPath("//button[contains(.,\'اضافة مجموعة منتجات\')]")).Displayed);
 		}
 		Assert.Equal(driver.FindElement(By.XPath("//button[contains(.,\'اضافة مجموعة منتجات\')]")).Text, "اضافة مجموعة منتجات");
 		driver.FindElement(By.XPath("//button[contains(.,\'اضافة مجموعة منتجات\')]")).Click();
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
 			wait.Until(driver => driver.FindElement(By.XPath("//app-bulk-type/div[2]/ul/li")).Displayed);
 		}
 		driver.FindElement(By.XPath("//app-bulk-type/div[2]/ul/li")).Click();
@@ -302,44 +251,54 @@ public class SuiteTests : IDisposable
 
 		driver.FindElement(By.XPath("//button[contains(.,\'التالي\')]")).Click();
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
 			wait.Until(driver => driver.FindElement(By.CssSelector(".walk-through-messages-p")).Displayed);
 		}
 		driver.FindElement(By.CssSelector("#escape-btn")).Click();
 
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
 			wait.Until(driver => driver.FindElement(By.XPath("//form/div/div/mat-form-field/div/div/div[3]")).Displayed);
 		}
 		driver.FindElement(By.XPath("//form/div/div/mat-form-field/div/div/div[3]")).Click();
 
 		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
 			wait.Until(driver => driver.FindElement(By.XPath("//mat-option/span")).Displayed);
 		}
 		driver.FindElement(By.XPath("//mat-option/span")).Click();
 		driver.FindElement(By.XPath("//input[@type='file']")).SendKeys("D:\\work\\MyGS1 IS\\products sheets\\Without_barcode 1 GTIN .xlsx");
 		//{
-		//	WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
-		//	wait.Until(driver => driver.FindElement(By.CssSelector(".mat-button-wrapper > .ng-star-inserted")).Enabled);
+		//	WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30000));
+		//	wait.Until(driver => driver.FindElement(By.XPath("//span[contains(.,'100%')]")).Displayed);
 		//}
-	
+		{
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
+			wait.Until(driver => driver.FindElement(By.CssSelector(".progress-container > span")).Text == "100%");
+		}
+		{
+			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(3));
+			wait.Until(driver => driver.FindElements(By.CssSelector(".mat-button-wrapper > .ng-star-inserted")).Count > 0);
+		}
+		driver.FindElement(By.CssSelector(".mat-button-wrapper > .ng-star-inserted")).SendKeys(Keys.Enter);
+		//driver.FindElement(By.CssSelector(".mat-button-wrapper > .ng-star-inserted")).SendKeys(Keys.Enter);
 		//driver.FindElement(By.CssSelector(".mat-button-wrapper > .ng-star-inserted")).Click();
-		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(3000));
-			wait.Until(driver => driver.FindElement(By.XPath("//span[contains(.,' التحقق من الملف ')]")).Enabled);
-		}
-		{
-			WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(3000));
-			wait.Until(driver => driver.FindElement(By.XPath("//span[contains(.,' التحقق من الملف ')]")).Displayed);
-		}
-		driver.FindElement(By.XPath("//span[contains(.,' التحقق من الملف ')]")).Click();
 		//{
-		//	WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+		//	WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30000));
+
+		//	wait.Until(driver => driver.FindElement(By.XPath("//span[contains(.,' التحقق من الملف ')]")).Enabled);
+		//}
+		//{
+		//	WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30000));
+		//	wait.Until(driver => driver.FindElement(By.XPath("//span[contains(.,' التحقق من الملف ')]")).Displayed);
+		//}
+		//driver.FindElement(By.XPath("//span[contains(.,' التحقق من الملف ')]")).Click();
+		//{
+		//	WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
 		//	wait.Until(driver => driver.FindElement(By.XPath("//a[@type='button']")).Displayed);
 		//}
 		//{
-		//	WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+		//	WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
 		//	wait.Until(driver => driver.FindElement(By.XPath("//button/span/span")).Enabled);
 		//}
 
@@ -356,7 +315,7 @@ public class SuiteTests : IDisposable
 		////////////////////
 
 		//{
-		//	WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+		//	WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
 		//	wait.Until(driver => driver.FindElement(By.CssSelector(".walk-through-messages-p")).Displayed);
 		//}
 		//driver.FindElement(By.CssSelector("#escape-btn")).Click();
